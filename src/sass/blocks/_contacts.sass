@@ -1,0 +1,184 @@
+.contacts 
+  padding-top: 27px
+  &-block 
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    padding-top: 41px
+    padding-bottom: 55px
+    &__requisites
+      font-size: 12px
+      color: rgba($text-color, 0.302)
+      position: relative
+      left: -205px
+      &-mob 
+        display: none
+  &-map 
+    position: relative
+    max-width: 1110px
+    width: 100%
+    height: 350px
+    box-shadow: 0px 10px 20px 0px rgba($text-color, 0.1)
+    margin-bottom: 32px
+  &-free 
+    position: relative
+    padding: 7px
+    width: 220px
+    font-size: 14px
+    text-align: center
+    color: $white-color
+    background-color: $text-color
+    box-shadow: 0px 10px 30px 0px rgba($text-color, 0.25)
+    +light
+    &:before 
+      content: ''
+      position: absolute
+      left: 21px
+      bottom: -20px
+      border: 10px solid transparent
+      border-top: 10px solid $text-color
+  &-address 
+    padding-top: 54px
+    padding-bottom: 29px
+    max-width: 320px
+    width: 100%
+    line-height: 1.5
+  &-phone
+    padding-bottom: 10px
+    &__tel 
+      margin-left: 15px
+      font-size: 18px
+      color: $text-color
+      text-decoration: none
+      background-image: linear-gradient($text-color, $text-color)
+      background-position: 0% 100%
+      background-repeat: no-repeat
+      background-size: 0% 1px
+      transition: background-size .3s
+      +bold
+      &:hover 
+        background-size: 100% 1px
+  &-email 
+    font-size: 12px
+    color: $main-color
+    text-decoration: none
+    background-image: linear-gradient($text-color, $text-color)
+    background-position: 0% 100%
+    background-repeat: no-repeat
+    background-size: 0% 1px
+    transition: background-size .3s
+    +med
+    &:hover 
+      background-size: 100% 1px
+  &-logo 
+    display: flex
+    justify-content: flex-end
+    margin-bottom: 23px
+    &__img 
+      width: 70px
+  &-social 
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    &__insta, &__fb, &__yt, &__wa, &__telega
+      width: 20px
+      height: 22px
+      margin-right: 20px
+    &__telega
+      margin-right: 0
+    &__insta 
+      background-image: url('../img/contacts/instagram.svg')
+      background-repeat: no-repeat
+      background-size: 20px 22px
+    &__fb 
+      background-image: url('../img/contacts/facebook.svg')
+      background-repeat: no-repeat
+      background-size: 20px 22px
+    &__yt 
+      background-image: url('../img/contacts/youtube.svg')
+      background-repeat: no-repeat
+      background-size: 20px 22px
+    &__wa 
+      background-image: url('../img/contacts/whatsapp.svg')
+      background-repeat: no-repeat
+      background-size: 20px 22px
+    &__telega 
+      background-image: url('../img/contacts/telegram.svg')
+      background-repeat: no-repeat
+      background-size: 20px 22px
+#map 
+  z-index: 10
+
+@media screen and ( max-width: 1200px )
+  .contacts
+    &-block 
+      &__requisites
+        display: none
+        &-mob 
+          display: block
+          
+@media screen and ( max-width: 768px )
+  .contacts 
+    padding: 90px 0 0
+    &-free 
+      margin: auto
+    &-block 
+      flex-direction: column
+      justify-content: center
+      padding-top: 0
+      &__map 
+        margin: auto
+      &__requisites 
+        display: none
+        &-mob 
+          display: block
+          font-size: 14px
+          line-height: 1.571
+          padding-top: 48px
+          margin: auto
+      &__logos 
+        width: 100%
+      &__address 
+        margin: auto
+    &-address 
+      padding-top: 52px
+      margin: auto
+    &-phone 
+      padding-bottom: 11px
+      margin: auto
+    &-email  
+      margin: auto
+    &-logo 
+      justify-content: center
+      padding-top: 50px
+      padding-bottom: 38px
+    &-social 
+      justify-content: center
+      margin-bottom: 55px
+@media screen and ( max-width: 425px )
+  .contacts 
+    &-gradient
+      background: url(../img/hero/element-gradient.svg) no-repeat
+      width: 855px
+      height: 970px
+      position: absolute 
+      top: -330px
+      left: 36%
+    &-map 
+      margin-bottom: 55px
+    &-free 
+      margin-left: 0
+    &-address 
+      padding-top: 95px
+    &-block 
+      &__address 
+        margin-left: 0
+      &__requisites 
+        &-mob 
+          margin-left: 0
+    &-logo 
+      margin-bottom: 0
+@media screen and ( max-width: 360px )
+  .contacts 
+    &-gradient
+      left: 26%

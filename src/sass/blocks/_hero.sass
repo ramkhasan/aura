@@ -1,0 +1,134 @@
+.hero 
+  color: $white-color
+  &-bg
+    background: url(../img/hero/background.svg) no-repeat
+    background-position: center
+    background-size: cover
+    width: 100%
+    height: 970px
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+  &-block 
+    display: flex 
+    justify-content: space-between
+    padding: 85px 0 80px
+  &-text 
+    max-width: 650px
+    width: 100%
+    position: relative
+    z-index: 100
+    &__title 
+      padding-bottom: 36px
+      margin: 0
+      font-size: 50px 
+      line-height: 1
+      +black
+      span 
+        font-size: 40px
+    &__description 
+      font-size: 30px
+      +light 
+    &__button 
+      z-index: 100
+  &-list
+    margin: 0
+    margin-left: 24px
+    padding: 0
+    padding-top: 67px
+    padding-bottom: 71px
+    &__item
+      display: flex
+      align-items: center
+      padding-bottom: 5px
+    &__image 
+      width: 20px
+      text-align: center
+    &__text
+      font-size: 15px
+      padding-left: 20px
+
+.parallax
+  position: relative
+#scene
+  position: absolute
+  right: 0
+  top: 123px
+  width: 50%
+.img-1
+  margin-left: 49%
+  margin-top: -22%
+.img-2
+  margin-top: -12%
+  margin-left: 20%
+.img-3
+  margin-top: 0
+  margin-left: 17%
+.img-4
+  margin-top: -28%
+  margin-left: 95%
+.img-5
+  margin-top: -4%
+  margin-left: 4%
+
+.edge--bottom--reverse 
+  background: $text-color
+  height: 826px
+
+@media screen and ( max-width: 1200px )
+  .img-4 
+    margin-top: -40%
+    margin-left: -90%
+  .img-5 
+    margin-top: 20%
+@media screen and ( max-width: 768px )
+  .hero 
+    &-bg 
+      top: -64%
+    &-block 
+      flex-direction: column 
+      padding-top: 0
+    &-text 
+      padding-bottom: 56px
+      margin: auto
+      &__title 
+        padding-top: 43px
+        padding-bottom: 13px
+        font-size: 26px
+        line-height: 1.3
+        & span 
+          font-size: 26px
+      &__description 
+        font-size: 20px
+    &-list 
+      padding-top: 34px
+      padding-bottom: 36px
+      margin-left: 0
+      &__text 
+        font-size: 12px
+  .img-1 
+    margin-left: -150px
+    margin-top: 33px
+    width: 855px
+  .img-2 
+    margin-top: 25px
+    margin-left: -177px
+    width: 1920px
+  .img-3 
+    margin-top: 470px
+    margin-left: -138px
+    width: 294px
+  .img-4 
+    margin-top: -170px
+    margin-left: -286px
+  .img-5 
+    margin-top: 457px
+    margin-left: -195px
+    width: 508px
+@media screen and ( max-width: 360px )
+  .hero 
+    &-text__button
+      padding: 19px 80px
+      display: flex
+      margin: auto

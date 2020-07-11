@@ -1,0 +1,105 @@
+.advantages
+  &-subtitle
+    position: relative
+    max-width: 918px
+    width: 100%
+    background-color: $white-color
+    border: 1px solid lighten($text-color, 60%)
+    margin: auto
+    padding: 32px 60px
+    text-align: center
+    line-height: 1.5
+    margin-bottom: 112px
+    &:before
+      content: ''
+      position: absolute
+      transform: translateX(-50%)
+      left: 50%
+      bottom: -20px
+      border: 10px solid transparent
+      border-top: 10px solid lighten($text-color, 60%)
+    &:after
+      content: ''
+      position: absolute
+      transform: translateX(-50%)
+      left: 50%
+      bottom: -19px
+      border: 10px solid transparent
+      border-top: 10px solid $white-color
+  &-cards
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &-card
+    position: relative
+    max-width: 350px
+    height: 420px
+    padding: 52px 48px
+    margin-bottom: 56px
+    background-color: $white-color
+    transition: all 0.6s
+    &:hover
+      box-shadow: 0px 15px 30px 0px rgba($text-color, 0.1)
+      transition: all 0.6s
+      z-index: 2
+    &:hover .advantages-card__icon-bg
+      opacity: 0
+      transition: all 0.6s
+    &:hover .advantages-card__icon-active
+      opacity: 0
+      transition: all 0.6s
+    &__icon 
+      height: 183px
+      display: flex 
+      align-items: center
+      &-bg 
+        position: absolute
+        transform: translateY(-50%)
+        top: 112px
+        left: 0
+        right: 0
+        margin: auto
+        transition: all 0.6s
+      &-active 
+        width: 20px
+        height: 20px
+        position: absolute
+        transform: translateY(-50%)
+        top: 112px
+        left: 0
+        right: 0
+        margin: auto
+        z-index: 1
+        transition: all 0.6s
+      &-hover 
+        width: 20px
+        height: 20px
+        position: absolute
+        transform: translateY(-50%)
+        top: 112px
+        left: 0
+        right: 0
+        margin: auto
+    &__title
+      font-size: 18px
+      line-height: 1.2
+      text-align: center
+      padding-bottom: 32px
+      +black
+    &__description
+      color: rgba($text-color, 0.6)
+      line-height: 1.75
+      text-align: center
+
+@media screen and ( max-width: 768px )
+  .advantages 
+    padding-top: 227px
+    &-subtitle 
+      padding: 32px 10px
+      margin-bottom: 56px
+    &-card 
+      padding: 50px 34px
+      margin: auto
+      margin-bottom: 0
+      &__title 
+        font-size: 20px

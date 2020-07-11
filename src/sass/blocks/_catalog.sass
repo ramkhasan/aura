@@ -1,0 +1,278 @@
+.catalog 
+  padding: 80px 0 111px
+  &-cards 
+    display: flex
+    justify-content: space-between 
+    flex-wrap: wrap 
+    &__button 
+      padding: 8px 38px
+      background-color: $white-color
+      border: 1px solid rgba($text-color, 0.2)
+      color: $text-color
+      font-size: 14px
+      box-shadow: none
+      display: flex 
+      margin: auto 
+      &:hover 
+        background-color: $white-color
+        box-shadow: 0 5px 15px rgba($text-color, 0.2)
+      &:active
+        background-color: $white-color
+  &-card
+    &__close
+      display: none
+    &__front, &__back
+      position: relative
+      background-color: $white-color
+      max-width: 350px
+      width: 100%
+      height: auto
+    &__back 
+      box-shadow: 0px 15px 30px 0px rgba($text-color, 0.1)
+      &:after
+        content: ''
+        position: absolute
+        right: 20px
+        bottom: -20px
+        border: 10px solid transparent
+        border-top: 10px solid $white-color
+    &__cashback-front
+      position: relative
+      max-width: 158px
+      width: 100%
+      margin: auto
+      margin-bottom: 28px
+      background-color: $white-color
+      border: 1px solid lighten($text-color, 60%)
+      font-size: 14px
+      text-align: center
+      padding: 6px 
+      &:before
+        content: ''
+        position: absolute
+        transform: translateX(-50%)
+        left: 50%
+        bottom: -20px
+        border: 10px solid transparent
+        border-top: 10px solid lighten($text-color, 60%)
+      &:after
+        content: ''
+        position: absolute
+        transform: translateX(-50%)
+        left: 50%
+        bottom: -19px
+        border: 10px solid transparent
+        border-top: 10px solid $white-color
+    &__cashback-back
+      font-size: 14px
+      text-align: center
+      padding: 8px
+      margin-bottom: 76px
+      +light 
+      &.first
+        color: $brand-color
+      &.second
+        color: $brand-2-color
+      &.third
+        color: $brand-3-color
+    &__image-front 
+      width: 300px
+      margin: auto
+      margin-bottom: 36px
+    &__image-back 
+      width: 200px
+      margin: auto
+      margin-bottom: 13px
+    &__img-front
+      width: 300px
+      display: flex
+      margin: auto
+    &__img-back
+      width: 200px
+      display: flex
+      margin: auto
+    &__text 
+      padding: 0 30px 28px
+    &__name
+      font-size: 22px
+      font-weight: normal
+      line-height: 1.2
+      margin: 0
+      margin-bottom: 27px
+    &__description 
+      font-size: 14px
+      color: rgba($text-color, 0.6)
+      line-height: 1.429
+      margin: 0
+      margin-bottom: 51px
+      +light
+    &__specifications 
+      position: relative
+      font-size: 14px
+      color: rgba($text-color, 0.6)
+      line-height: 1.429
+      padding: 25px 30px 
+      max-width: 350px 
+      margin-left: -30px
+      margin-right: -30px
+      margin-bottom: 34px
+      background-color: $white-color
+      box-shadow: 0px 15px 30px 0px rgba($text-color, 0.1)
+      +light 
+      &:after
+        content: ''
+        position: absolute
+        right: 20px
+        bottom: -20px
+        border: 10px solid transparent
+        border-top: 10px solid $white-color
+    &__characteristics 
+      font-size: 14px
+      line-height: 1.429
+      margin: 0
+      margin-bottom: 45px
+    &__price 
+      margin-bottom: 38px 
+      font-size: 24px
+      display: flex
+      align-items: flex-end
+      justify-content: space-between 
+      &-old 
+        position: relative
+        font-size: 20px
+        color: rgba($text-color, 0.4)
+        text-align: right
+        +light
+        &:before 
+          content: ''
+          position: absolute
+          top: 45%
+          left: -21px
+          width: 118%
+          height: 1px
+          background: rgba($text-color, 0.4)
+    &__button 
+      display: none
+      &.first
+        color: $brand-color
+      &.second
+        color: $brand-2-color
+      &.third
+        color: $brand-3-color
+      &-block 
+        display: flex 
+        align-items: center
+    &__button-front, &__button-back
+      padding: 19px 54px
+      display: flex 
+      margin: auto
+      &.first
+        background-color: $brand-color
+        box-shadow: 0px 10px 30px 0px rgba($brand-color, 0.5)
+      &:hover
+        background-color: lighten($brand-color, 5%)
+        box-shadow: 0 10px 30px rgba($brand-color, 0.7)
+      &:active
+        background-color: lighten($brand-color, 10%)
+      &.second 
+        background-color: $brand-2-color
+        box-shadow: 0px 10px 30px 0px rgba($brand-2-color, 0.5)
+        &:hover
+          background-color: lighten($brand-2-color, 5%)
+          box-shadow: 0 10px 30px rgba($brand-2-color, 0.7)
+        &:active
+          background-color: lighten($brand-2-color, 10%)
+      &.third 
+        background-color: $brand-3-color
+        box-shadow: 0px 10px 30px 0px rgba($brand-3-color, 0.5)
+        &:hover
+          background-color: lighten($brand-3-color, 5%)
+          box-shadow: 0 10px 30px rgba($brand-3-color, 0.7)
+        &:active
+          background-color: lighten($brand-3-color, 10%)
+.flip-container 
+  perspective: 1000px
+.flip-container:hover .flipper, .flip-container.hover .flipper
+  transform: rotateY(180deg)
+.flip-container, .front, .back 
+  max-width: 350px
+  width: 100%
+  height: 776px
+  margin-bottom: 74px
+.flipper 
+  transition: 0.6s
+  transform-style: preserve-3d
+  position: relative
+.front, .back 
+  backface-visibility: hidden
+  position: absolute
+  top: 0
+  left: 0
+.front 
+  z-index: 2
+  transform: rotateY(0deg)
+.back 
+  transform: rotateY(180deg)
+.flip-container.card-toggle 
+  display: none
+.flip-container.card-toggle.show 
+  display: block
+
+@media screen and ( max-width: 1200px )
+  .flip-container 
+    margin: auto
+    margin-bottom: 74px
+@media screen and ( max-width: 425px )
+  .catalog 
+    padding: 33px 0
+    &-title 
+      max-width: 280px
+    &-card 
+      &__close
+        display: block
+        color: $text-color
+        background-color: $white-color
+        opacity: 0.302
+        width: 21px
+        height: 21px
+        border-radius: 50%
+        border: 1px solid $text-color
+        text-align: center
+        font-size: 12px
+        position: absolute
+        top: 9px
+        right: 9px
+      &__cashback-front 
+        color: $white-color
+        background-color: $text-color 
+        border: 1px solid $text-color
+        margin: inherit
+        margin-bottom: 56px
+        &:before
+          content: none
+        &:after
+          left: 30px
+          bottom: -21px
+          border-top: 10px solid $text-color
+      &__cashback-back 
+        padding: 12px
+        margin-bottom: 46px
+      &__image-front 
+        width: 250px
+      &__img-front 
+        width: 250px
+      &__specifications 
+        padding: 25px 16px
+        margin-left: -16px
+        margin-right: -16px
+      &__text 
+        padding: 0 16px 28px
+      &__button 
+        display: block
+        width: 100%
+        text-align: center
+        margin-right: -16px
+      &__button-front 
+        margin-left: -16px
+  .flip-container 
+    margin-bottom: 52px

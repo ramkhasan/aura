@@ -1,0 +1,251 @@
+.header
+  padding-top: 18px
+  &-block 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    z-index: 100
+  &-logo
+    max-width: 70px
+    width: 100%
+    &__img 
+      width: 70px
+      &-mob 
+        display: none
+  &-contacts
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-left: 100px
+    margin-bottom: 26px
+    &__email
+      margin-left: 296px
+      font-size: 12px
+      color: $white-color
+      text-decoration: none
+      background-image: linear-gradient($white-color, $white-color)
+      background-position: 0% 100%
+      background-repeat: no-repeat
+      background-size: 0% 1px
+      transition: background-size .3s
+      +med
+      &:hover 
+        background-size: 100% 1px
+    &__phone 
+      display: flex
+      align-items: center
+    &__tel 
+      margin-left: 15px
+      font-size: 18px
+      color: $white-color
+      text-decoration: none
+      background-image: linear-gradient($white-color, $white-color)
+      background-position: 0% 100%
+      background-repeat: no-repeat
+      background-size: 0% 1px
+      transition: background-size .3s
+      +bold
+      &:hover 
+        background-size: 100% 1px
+  &-links 
+    margin-bottom: 26px
+    &__login 
+      padding: 9px 37px
+      font-size: 12px
+      text-decoration: none
+      background-color: inherit
+      box-shadow: none
+      border: 2px solid $main-color
+      color: $white-color
+      transition: all .3s
+      &:hover 
+        background-color: $main-color
+        box-shadow: 0 10px 30px rgba($main-color, 0.7)
+        color: rgba($white-color, 0.7)
+        transition: all .3s
+    &__reg
+      padding: 9px 53px
+      background-color: $main-color
+      box-shadow: 0px 10px 20px 0px rgba($main-color, 0.3)
+      font-size: 14px
+      +light 
+      &:hover 
+        background-color: lighten($main-color, 5%)
+        box-shadow: 0 10px 30px rgba($main-color, 0.7)
+      &:active
+        background-color: lighten($main-color, 10%)
+  &-menu 
+    width: 366px
+    margin-bottom: 26px
+    margin-left: 95px
+    display: flex
+    justify-content: space-between
+    font-size: 12px
+    &__link 
+      color: $white-color
+      text-decoration: none
+      transition: all 0.6s
+      &:hover 
+        color: $main-color
+    &__mob
+      display: none
+  &-mob 
+    display: none 
+    &__hamburger 
+      display: none
+    &__menu 
+      display: none
+
+@media screen and ( max-width: 1200px )
+  .header 
+    padding-top: 20px
+    &-logo 
+      padding-top: 3px
+      &__img 
+        display: none
+      &__img-mob 
+        display: block
+        width: 70px
+    &-menu 
+      margin-left: 0
+    &-contacts
+      display: none
+    &-links 
+      display: none
+    &-mob 
+      display: flex 
+      flex-direction: column
+      margin-bottom: 26px
+      &__user
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        padding-bottom: 19px
+      &__phone
+        display: flex
+        align-items: center
+        justify-content: flex-end
+      &__text 
+        font-size: 12px
+        color: $white-color
+        padding-right: 16px
+      &__icon
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 34px
+        height: 34px
+        border-radius: 50%
+        color: $white-color
+        background-color: $main-color
+        box-shadow: 0px 10px 20px 0px rgba($main-color, 0.3)
+        cursor: pointer
+        transition: ease 0.3s
+        &:hover
+          transform: scale(1.03)
+          box-shadow: 0 10px 30px rgba($main-color, 0.7)
+          opacity: .8
+          &:active
+            transform: scale(.98)
+            opacity: .6
+      &__icon-phone
+        background-color: $white-color
+        box-shadow: 0px 10px 20px 0px rgba($white-color, 0.3)
+        &:hover
+          box-shadow: 0 10px 30px rgba($white-color, 0.7)
+@media screen and ( max-width: 768px )
+  .header 
+    &-menu 
+      display: none
+    &-mob 
+      height: 86px
+      margin-bottom: 0
+      &__user 
+        display: none
+      &__hamburger
+        display: block
+        margin-left: 27px
+        margin-bottom: 10px
+        font-size: 12px
+      &__menu
+        transition: all 0.5s
+        &.active 
+          display: flex
+          flex-direction: column
+          width: 100%
+          height: 100%
+          position: absolute
+          top: 0
+          right: 0
+          padding: 122px 13%
+          font-size: 18px
+          background-color: $text-color
+          z-index: 101
+          +light
+        &-link 
+          color: $white-color
+          padding-bottom: 24px
+          text-decoration: none
+  #hamburger
+    position: relative
+    top: -8px
+    float: right
+    transform: rotate(0deg)
+    transition: .5s ease-in-out
+    cursor: pointer
+    z-index: 102
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 34px
+    height: 34px
+    border-radius: 50%
+    color: $white-color
+    background-color: $main-color
+    box-shadow: 0px 10px 20px 0px rgba($main-color, 0.3)
+    cursor: pointer
+    transition: ease 0.3s
+    &:hover
+      transform: scale(1.03)
+      background-color: lighten($main-color, 5%)
+      box-shadow: 0 10px 30px rgba($main-color, 0.7)
+    & span
+      display: block
+      position: absolute
+      height: 2px
+      width: 18px
+      left: 0
+      right: 0
+      margin: auto
+      background: $white-color
+      border-radius: 2px
+      opacity: 1
+      transform: rotate(0deg)
+      transition: .25s ease-in-out
+    & span:nth-child(1)
+      top: 8px
+    & span:nth-child(2) 
+      top: 13px
+      width: 12px
+    & span:nth-child(3) 
+      top: 18px
+    & span:nth-child(4) 
+      top: 23px
+      width: 10px
+    &.open span:nth-child(1) 
+      top: 15px
+      transform: rotate(135deg)
+    &.open span:nth-child(2) 
+      opacity: 0
+    &.open span:nth-child(3) 
+      top: 15px
+      transform: rotate(-135deg)
+    &.open span:nth-child(4) 
+      opacity: 0
+@media screen and ( max-width: 425px )
+  .header 
+    &-mob 
+      &__menu
+        &.active 
+          padding: 122px 18px
+

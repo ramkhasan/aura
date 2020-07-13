@@ -74,27 +74,184 @@
         box-shadow: 0 10px 30px rgba($main-color, 0.7)
       &:active
         background-color: lighten($main-color, 10%)
-  &-menu 
-    width: 366px
-    margin-bottom: 26px
-    margin-left: 95px
-    display: flex
-    justify-content: space-between
-    font-size: 12px
-    &__link 
-      color: $white-color
-      text-decoration: none
-      transition: all 0.6s
-      &:hover 
-        color: $main-color
-    &__mob
-      display: none
+  // &-menu 
+  //   width: 366px
+  //   margin-bottom: 26px
+  //   margin-left: 95px
+  //   display: flex
+  //   justify-content: space-between
+  //   font-size: 12px
+  //   &__link 
+  //     color: $white-color
+  //     text-decoration: none
+  //     transition: all 0.6s
+  //     &:hover 
+  //       color: $main-color
+  //   &__mob
+  //     display: none
   &-mob 
     display: none 
-    &__hamburger 
-      display: none
-    &__menu 
-      display: none
+  //   &__hamburger 
+  //     display: none
+  //   &__menu 
+  //     display: none
+
+// Мобильное меню-бургер 
+body.no-scroll 
+  overflow: hidden
+// Навигация
+.nav 
+  width: 366px
+  margin-bottom: 26px
+  margin-left: 95px
+  font-size: 12px
+  z-index: 105
+  transition: all 0.5s ease-in-out
+
+.nav--active .nav 
+  opacity: 1
+  background: $text-color 
+
+.nav__list 
+  padding: 0
+  display: flex
+  align-items: baseline
+  justify-content: space-between
+  flex-direction: row
+
+.nav__item 
+  list-style-type: none 
+
+.nav__link 
+  color: $white-color
+  text-decoration: none
+  transition: all 0.6s
+
+.nav__link:hover 
+  color: $main-color
+
+/* иконка навигации */
+.nav__trigger 
+  display: none
+  
+
+@media (max-width: 768px) 
+  .nav__trigger 
+    position: absolute
+    top: 20px
+    right: 0 
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 34px
+    height: 34px
+    border-radius: 50%
+    color: $white-color
+    background-color: $main-color
+    box-shadow: 0px 10px 20px 0px rgba($main-color, 0.3)
+    transition: ease 0.3s
+    z-index: 110
+    &:hover
+      transform: scale(1.03)
+      box-shadow: 0 10px 30px rgba($main-color, 0.7)
+      &:active
+        transform: scale(.98)
+    &--active 
+      background-color: lighten($text-color, 6%)
+      box-shadow: 0px 10px 20px 0px rgba($black-color, 0.3)
+      transition: ease 0.3s
+      z-index: 110
+      &:hover
+        transform: scale(1.03)
+        box-shadow: 0 10px 30px rgba($black-color, 0.7)
+        &:active
+          transform: scale(.98)
+
+  .nav 
+    position: fixed
+    top: 0
+    left: 0
+    transform: translateX(-100%)
+    width: 100%
+    height: 100%
+    z-index: 105
+    opacity: 0 
+
+  .nav__item 
+    text-align: left
+    padding: 8px 
+    padding-bottom: 16px
+
+  .nav__list 
+    margin: 0
+    padding: 11%
+    padding-top: 114px
+    flex-direction: column
+    align-items: flex-start 
+
+  .nav__link 
+    opacity: 0  
+    font-size: 18px
+    +light
+
+.nav__icon 
+  display: flex 
+  justify-content: center
+  position: relative
+  width: 12px
+  height: 2px
+  background-color: $white-color
+  transition-property: background-color, transform
+  transition-duration: 0.5s 
+
+.nav__icon:before, .nav__icon:after
+  content: ''
+  display: block
+  width: 18px
+  height: 2px
+  position: absolute
+  background: $white-color
+  transition-property: margin, transform
+  transition-duration: 0.5s 
+
+.nav__icon span
+  content: ''
+  display: block
+  width: 10px
+  height: 2px
+  position: absolute
+  background: $white-color
+  transition-property: margin, transform
+  transition-duration: 0.5s 
+
+.nav__icon:before 
+  margin-top: -6px 
+
+.nav__icon:after 
+  margin-top: 6px 
+
+.nav__icon span 
+  margin-top: 12px
+
+.nav--active .nav__link 
+  opacity: 1 
+
+.nav--active .nav 
+  transition: all 300ms ease-in-out
+  transform: translateX(0) 
+
+.nav--active .nav__icon, .nav--active .nav__icon span
+  background: rgba($text-color, 0) 
+  transition: all 300ms ease-in-out
+  transform: translateX(0) 
+
+.nav--active .nav__icon:before 
+  margin-top: 0
+  transform: rotate(45deg) 
+
+.nav--active .nav__icon:after 
+  margin-top: 0
+  transform: rotate(-45deg) 
 
 @media screen and ( max-width: 1200px )
   .header 
@@ -106,8 +263,8 @@
       &__img-mob 
         display: block
         width: 70px
-    &-menu 
-      margin-left: 0
+    // &-menu 
+    //   margin-left: 0
     &-contacts
       display: none
     &-links 
@@ -153,99 +310,27 @@
         box-shadow: 0px 10px 20px 0px rgba($white-color, 0.3)
         &:hover
           box-shadow: 0 10px 30px rgba($white-color, 0.7)
+  .nav 
+    margin-left: 0
 @media screen and ( max-width: 768px )
   .header 
-    &-menu 
-      display: none
+    // &-menu 
+    //   display: none
     &-mob 
       height: 86px
       margin-bottom: 0
       &__user 
         display: none
-      &__hamburger
-        display: block
-        margin-left: 27px
-        margin-bottom: 10px
-        font-size: 12px
-      &__menu
-        transition: all 0.5s
-        &.active 
-          display: flex
-          flex-direction: column
-          width: 100%
-          height: 100%
-          position: absolute
-          top: 0
-          right: 0
-          padding: 122px 13%
-          font-size: 18px
-          background-color: $text-color
-          z-index: 101
-          +light
         &-link 
           color: $white-color
           padding-bottom: 24px
           text-decoration: none
-  #hamburger
-    position: relative
-    top: -8px
-    float: right
-    transform: rotate(0deg)
-    transition: .5s ease-in-out
-    cursor: pointer
-    z-index: 102
-    display: flex
-    align-items: center
-    justify-content: center
-    width: 34px
-    height: 34px
-    border-radius: 50%
-    color: $white-color
-    background-color: $main-color
-    box-shadow: 0px 10px 20px 0px rgba($main-color, 0.3)
-    cursor: pointer
-    transition: ease 0.3s
-    &:hover
-      transform: scale(1.03)
-      background-color: lighten($main-color, 5%)
-      box-shadow: 0 10px 30px rgba($main-color, 0.7)
-    & span
-      display: block
-      position: absolute
-      height: 2px
-      width: 18px
-      left: 0
-      right: 0
-      margin: auto
-      background: $white-color
-      border-radius: 2px
-      opacity: 1
-      transform: rotate(0deg)
-      transition: .25s ease-in-out
-    & span:nth-child(1)
-      top: 8px
-    & span:nth-child(2) 
-      top: 13px
-      width: 12px
-    & span:nth-child(3) 
-      top: 18px
-    & span:nth-child(4) 
-      top: 23px
-      width: 10px
-    &.open span:nth-child(1) 
-      top: 15px
-      transform: rotate(135deg)
-    &.open span:nth-child(2) 
-      opacity: 0
-    &.open span:nth-child(3) 
-      top: 15px
-      transform: rotate(-135deg)
-    &.open span:nth-child(4) 
-      opacity: 0
 @media screen and ( max-width: 425px )
-  .header 
-    &-mob 
-      &__menu
-        &.active 
-          padding: 122px 18px
-
+  // .header 
+  //   &-mob 
+  //     &__menu
+  //       &.active 
+  //         padding: 122px 18px
+  .nav__list 
+    padding: 10px
+    padding-top: 114px

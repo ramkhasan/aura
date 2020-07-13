@@ -23,17 +23,31 @@
               </div>
               <!-- /.header-logo -->
 
+              <!-- /Меню на мобильных устройствах -->
+              <a href="#" class="nav__trigger">
+                <span class="nav__icon">
+                  <span></span>
+                </span>
+              </a>
+              <nav class="nav" id="menu">
+                <ul class="nav__list">
+                  <li class="nav__item"><a class="nav__link" href="#catalog">Каталог украшений</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#about">О проекте</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Новости</a></li>
+                </ul>
+              </nav>
+
               <!-- Меню -->
-              <nav class="header-menu" id="menu">
+              <!-- <nav class="header-menu" id="menu">
                 <a href="#catalog" class="header-menu__link">Каталог украшений</a>
                 <a href="#about" class="header-menu__link">О проекте</a>
                 <a href="#contacts" class="header-menu__link">Контакты</a>
                 <a href="#" class="header-menu__link">Новости</a>
-              </nav>
+              </nav> -->
               <!-- /.header-menu -->
 
               <div class="header-contacts">
-                <!-- <a href="mailto:hello@mygoldenweb.com" class="header-contacts__email">hello@mygoldenweb.com</a> -->
                 <div class="header-contacts__phone">
                   <img src="img/contacts/icon-phone.svg" alt="Телефон" class="header-contacts__img" />
                   <a href="tel:8 (800) 500-97-82" class="header-contacts__tel">8 (800) 500-97-82</a>
@@ -41,14 +55,6 @@
               </div>
               <!-- /.header-contacts -->
               <div class="header-links">
-                <!-- <a
-                      data-fancybox
-                      data-type="iframe"
-                      data-src="login.html"
-                      href="javascript:;"
-                      class="header-links__login"
-                      >Вход</a
-                    > -->
                 <button data-fancybox data-type="iframe" data-src="login.html" href="javascript:;"
                   class="button header-links__login">
                   Вход / Регистрация
@@ -63,16 +69,6 @@
                     class="header-mob__icon">
                     <img src="img/header/icon-user.svg" alt="Вход" />
                   </a>
-                </div>
-
-                <div class="header-mob__hamburger">
-                  Меню
-                  <div id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
                 </div>
 
                 <div class="header-mob__phone">
@@ -149,14 +145,6 @@
         <!-- /.hero-block -->
       </div>
       <!-- /.container -->
-      <!-- Меню -->
-      <nav class="header-mob__menu" id="menu">
-        <a href="#catalog" class="header-mob__menu-link">Каталог украшений</a>
-        <a href="#about" class="header-mob__menu-link">О проекте</a>
-        <a href="#contacts" class="header-mob__menu-link">Контакты</a>
-        <a href="#" class="header-mob__menu-link">Новости</a>
-      </nav>
-      <!-- /.header-mob__menu -->
     </section>
     <!-- /.hero -->
 
@@ -960,7 +948,7 @@
           <!-- /.contacts-block__requisites -->
           <div class="contacts-block__logos">
             <div class="contacts-logo features-title wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
-              <img class="contacts-logo__img" src="img/header/logo.svg" alt="Логотип" />
+              <img class="contacts-logo__img" src="img/contacts/logo.svg" alt="Логотип" />
             </div>
             <!-- /.contacts-logo -->
             <div class="contacts-social features-title wow animate__animated animate__fadeInUp" data-wow-delay="0.9s">

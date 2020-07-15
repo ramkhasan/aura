@@ -1,1102 +1,1507 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ювелирная компания "Aura"</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ювелирная компания "Aura"</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/animate.min.css" />
-  <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
-</head>
+  <body>
+    <!-- Прелодер -->
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
+    <!-- /Прелодер -->
+    <main>
+      <section class="hero edge--bottom--reverse">
+        <div class="container">
+          <header>
+            <div class="header">
+              <div
+                class="header-block wow animate__animated animate__fadeInDown"
+                data-wow-delay="0.2s"
+              >
+                <div class="header-logo">
+                  <img
+                    class="header-logo__img"
+                    src="img/header/logo.svg"
+                    alt="Логотип"
+                  />
+                  <img
+                    class="header-logo__img-mob"
+                    src="img/header/logo-mob.svg"
+                    alt="Логотип"
+                  />
+                </div>
+                <!-- /.header-logo -->
 
-<body>
-  <main>
-    <section class="hero edge--bottom--reverse">
-      <div class="container">
-        <header>
-          <div class="header">
-            <div class="header-block wow animate__animated animate__fadeInDown" data-wow-delay="0.2s">
-              <div class="header-logo">
-                <img class="header-logo__img" src="img/header/logo.svg" alt="Логотип" />
-                <img class="header-logo__img-mob" src="img/header/logo-mob.svg" alt="Логотип" />
-              </div>
-              <!-- /.header-logo -->
+                <!-- /Меню -->
+                <div class="header-menu">
+                  <div class="header-menu__text">Меню</div>
+                  <a href="#" class="nav__trigger">
+                    <span class="nav__icon">
+                      <span></span>
+                    </span>
+                  </a>
+                  <nav class="nav" id="menu">
+                    <ul class="nav__list">
+                      <li class="nav__item">
+                        <a class="nav__link" href="#catalog"
+                          >Каталог украшений</a
+                        >
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__link" href="#about">О проекте</a>
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__link" href="#contacts">Контакты</a>
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__link" href="#">Новости</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <!-- /.header-menu -->
 
-              <!-- /Меню на мобильных устройствах -->
-              <a href="#" class="nav__trigger">
-                <span class="nav__icon">
-                  <span></span>
-                </span>
-              </a>
-              <nav class="nav" id="menu">
-                <ul class="nav__list">
-                  <li class="nav__item"><a class="nav__link" href="#catalog">Каталог украшений</a></li>
-                  <li class="nav__item"><a class="nav__link" href="#about">О проекте</a></li>
-                  <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
-                  <li class="nav__item"><a class="nav__link" href="#">Новости</a></li>
-                </ul>
-              </nav>
-
-              <!-- Меню -->
-              <!-- <nav class="header-menu" id="menu">
+                <!-- Меню -->
+                <!-- <nav class="header-menu" id="menu">
                 <a href="#catalog" class="header-menu__link">Каталог украшений</a>
                 <a href="#about" class="header-menu__link">О проекте</a>
                 <a href="#contacts" class="header-menu__link">Контакты</a>
                 <a href="#" class="header-menu__link">Новости</a>
               </nav> -->
-              <!-- /.header-menu -->
+                <!-- /.header-menu -->
 
-              <div class="header-contacts">
-                <div class="header-contacts__phone">
-                  <img src="img/contacts/icon-phone.svg" alt="Телефон" class="header-contacts__img" />
-                  <a href="tel:8 (800) 500-97-82" class="header-contacts__tel">8 (800) 500-97-82</a>
+                <div class="header-contacts">
+                  <div class="header-contacts__phone">
+                    <img
+                      src="img/contacts/icon-phone.svg"
+                      alt="Телефон"
+                      class="header-contacts__img"
+                    />
+                    <a href="tel:8 (800) 500-97-82" class="header-contacts__tel"
+                      >8 (800) 500-97-82</a
+                    >
+                  </div>
                 </div>
-              </div>
-              <!-- /.header-contacts -->
-              <div class="header-links">
-                <button data-fancybox data-type="iframe" data-src="login.html" href="javascript:;"
-                  class="button header-links__login">
-                  Вход / Регистрация
-                </button>
-              </div>
-              <!-- /.header-links -->
+                <!-- /.header-contacts -->
+                <div class="header-links">
+                  <button
+                    data-fancybox
+                    data-type="iframe"
+                    data-src="login.html"
+                    href="javascript:;"
+                    class="button header-links__login"
+                  >
+                    Вход / Регистрация
+                  </button>
+                </div>
+                <!-- /.header-links -->
 
-              <div class="header-mob">
-                <div class="header-mob__user">
-                  <div class="header-mob__text">Вход/Регистрация</div>
-                  <a data-fancybox data-type="iframe" data-src="login.html" href="javascript:;"
-                    class="header-mob__icon">
-                    <img src="img/header/icon-user.svg" alt="Вход" />
-                  </a>
-                </div>
+                <div class="header-mob">
+                  <div class="header-mob__user">
+                    <div class="header-mob__text">Вход/Регистрация</div>
+                    <a
+                      data-fancybox
+                      data-type="iframe"
+                      data-src="login.html"
+                      href="javascript:;"
+                      class="header-mob__icon"
+                    >
+                      <img src="img/header/icon-user.svg" alt="Вход" />
+                    </a>
+                  </div>
 
-                <div class="header-mob__phone">
-                  <div class="header-mob__text">Позвонить</div>
-                  <a href="tel:8 (800) 500-97-82" class="header-mob__icon header-mob__icon-phone">
-                    <img src="img/header/icon-phone-mob.svg" alt="Телефон" />
-                  </a>
+                  <div class="header-mob__phone">
+                    <div class="header-mob__text">Позвонить</div>
+                    <a
+                      href="tel:8 (800) 500-97-82"
+                      class="header-mob__icon header-mob__icon-phone"
+                    >
+                      <img src="img/header/icon-phone-mob.svg" alt="Телефон" />
+                    </a>
+                  </div>
                 </div>
+                <!-- /.header-mob -->
               </div>
-              <!-- /.header-mob -->
+              <!-- /.header-block -->
             </div>
-            <!-- /.header-block -->
-          </div>
+            <!-- /.header -->
+          </header>
           <!-- /.header -->
-        </header>
-        <!-- /.header -->
 
-        <div class="hero-block">
-          <div class="hero-text">
-            <h1 class="hero-text__title wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s">
-              Особенные украшения<br />
-              <span>для коррекции энергии</span>
-            </h1>
-            <!-- /.hero-text__title -->
-            <div class="hero-text__description wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
-              Управляйте своей судьбой!
-            </div>
-            <!-- /.hero-text__description -->
-            <ul class="hero-list">
-              <li class="hero-list__item animated wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">
-                <div class="hero-list__image">
-                  <img src="img/hero/icon-password.svg" alt="Защита" />
-                </div>
-                <span class="hero-list__text">Защита от негативной и деструктивной энергии</span>
-              </li>
-              <li class="hero-list__item animated wow animate__animated animate__fadeInLeft" data-wow-delay="0.4s">
-                <div class="hero-list__image">
-                  <img src="img/hero/icon-awakening.svg" alt="Пробуждение" />
-                </div>
-                <span class="hero-list__text">Пробуждение скрытого потенциала и ресурсов</span>
-              </li>
-              <li class="hero-list__item animated wow animate__animated animate__fadeInLeft" data-wow-delay="0.5s">
-                <div class="hero-list__image">
-                  <img src="img/hero/icon-harmony.svg" alt="Гармония" />
-                </div>
-                <span class="hero-list__text">Гармония внутреннего и внешнего миров</span>
-              </li>
-              <li class="hero-list__item animated wow animate__animated animate__fadeInLeft" data-wow-delay="0.6s">
-                <div class="hero-list__image">
-                  <img src="img/hero/icon-assistants.svg" alt="Помощники" />
-                </div>
-                <span class="hero-list__text">Помощники на пути к цели, мечте и реализации</span>
-              </li>
-            </ul>
-            <button class="button hero-text__button wow animate__animated animate__fadeInLeft" data-wow-delay="0.7s"
-              data-fancybox data-type="ajax" data-src="callback.html" href="javascript:;">
-              Узнать подробнее
-            </button>
-            <!-- /.button -->
-          </div>
-          <!-- /.hero-text -->
-          <div class="hero-image">
-            <div id="scene" class="animated wow animate__animated animate__fadeInRight" data-wow-delay="0.5s"
-              data-relative-input="true">
-              <img src="img/hero/element-gradient.svg" data-depth="0.9" class="img-1" />
-              <img src="img/hero/element-black.svg" data-depth="0.7" class="img-2" />
-              <img src="img/hero/element-pink.png" data-depth="0.5" class="img-3" />
-              <img src="img/hero/element-white.png" data-depth="0.3" class="img-4" />
-              <img src="img/hero/girl.png" data-depth="0.1" class="img-5" />
-            </div>
-          </div>
-          <!-- /.hero-image -->
-        </div>
-        <!-- /.hero-block -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.hero -->
-
-    <section class="section features">
-      <div class="container">
-        <div class="features-violet"></div>
-        <div class="features-ring"></div>
-        <h2 class="section-title features-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
-          Особенности <span>украшений</span>
-        </h2>
-        <!-- /.section-title features-title -->
-        <div class="features-item">
-          <div class="features-name">
-            <div class="features-name__power wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
-              Влияние
-            </div>
-          </div>
-          <div class="features-description wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
-            Энергетика вещей влияет на окружающее пространство, в том числе и
-            на человека. Ювелирные украшения в этом плане максимально
-            воздействуют на своего обладателя, особенно изделия, специально
-            созданные для коррекции энергии. Такие украшения используются
-            людьми уже на протяжении сотен лет.
-          </div>
-        </div>
-        <!-- /.features-item -->
-        <div class="features-item">
-          <div class="features-name">
-            <div class="features-name__harmony wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
-              Гармония
-            </div>
-          </div>
-          <div class="features-description wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
-            Если Вы постоянно ощущаете эмоциональную истощённость, видите
-            трудности в решении жизненных ситуаций, хотите быть в гармонии со
-            своими внутренним и внешним мирами, найти своё духовное «я», тогда
-            особенные украшения для энергокоррекции - это то, что Вам нужно!
-          </div>
-        </div>
-        <!-- /.features-item -->
-        <div class="features-item">
-          <div class="features-name">
-            <div class="features-name__management wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
-              Управление
-            </div>
-          </div>
-          <div class="features-description wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
-            Настройте вибрации своей энергии так, как Вы хотите, откройте
-            доступ к древнему знанию и законам, по которым устроена наша
-            реальность, и начните управлять судьбой по Вашим правилам. Прямо
-            сейчас!
-          </div>
-        </div>
-        <!-- /.features-item -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.section features -->
-
-    <section class="section advantages">
-      <div class="container">
-        <h2 class="section-title advantages-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
-          Преимущества <span>украшений</span>
-        </h2>
-        <!-- /.section-title advantages-title -->
-        <div class="advantages-subtitle wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
-          Особенные украшения - ювелирные артефакты, которые служат мощнейшими
-          накопителями энергии и имеют своё практическое применение.
-        </div>
-        <!-- /.advantages-subtitle -->
-        <div class="advantages-cards">
-          <div class="advantages-card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
-            <div class="advantages-card__icon">
-              <img class="advantages-card__icon-bg" src="img/advantages/element-active-development.png"
-                alt="Активное развитие" />
-              <img class="advantages-card__icon-active" src="img/advantages/icon-active-development.svg"
-                alt="Активное развитие" />
-              <img class="advantages-card__icon-hover" src="img/advantages/icon-gradient-active-development.svg"
-                alt="Активное развитие" />
-            </div>
-            <!-- /.advantages-card__icon -->
-            <div class="advantages-card__text">
-              <div class="advantages-card__title">Активное развитие</div>
-              <div class="advantages-card__description">
-                Помогают активно развиваться и оставаться на высоком уровне
-                осознанности
+          <div class="hero-block">
+            <div class="hero-text">
+              <h1
+                class="hero-text__title wow animate__animated animate__fadeInLeft"
+                data-wow-delay="0.1s"
+              >
+                Особенные украшения<br />
+                <span>для коррекции энергии</span>
+              </h1>
+              <!-- /.hero-text__title -->
+              <div
+                class="hero-text__description wow animate__animated animate__fadeInLeft"
+                data-wow-delay="0.2s"
+              >
+                Управляйте своей судьбой!
               </div>
-            </div>
-            <!-- /.advantages-card__text -->
-          </div>
-          <!-- /.card advantages-card -->
-
-          <div class="advantages-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
-            <div class="advantages-card__icon">
-              <img class="advantages-card__icon-bg" src="img/advantages/element-direct-communication.png"
-                alt="Прямая коммуникация" />
-              <img class="advantages-card__icon-active" src="img/advantages/icon-direct-communication.svg"
-                alt="Прямая коммуникация" />
-              <img class="advantages-card__icon-hover" src="img/advantages/icon-gradient-direct-communication.svg"
-                alt="Прямая коммуникация" />
-            </div>
-            <!-- /.advantages-card__icon -->
-            <div class="advantages-card__text">
-              <div class="advantages-card__title">Прямая коммуникация</div>
-              <div class="advantages-card__description">
-                Важный инструмент соединения и прямой коммуникации со
-                вселенной
-              </div>
-            </div>
-            <!-- /.advantages-card__text -->
-          </div>
-          <!-- /.card advantages-card -->
-
-          <div class="advantages-card wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
-            <div class="advantages-card__icon">
-              <img class="advantages-card__icon-bg" src="img/advantages/element-spiritual-growth.png"
-                alt="Духовный рост" />
-              <img class="advantages-card__icon-active" src="img/advantages/icon-spiritual-growth.svg"
-                alt="Духовный рост" />
-              <img class="advantages-card__icon-hover" src="img/advantages/icon-gradient-spiritual-growth.svg"
-                alt="Духовный рост" />
-            </div>
-            <!-- /.advantages-card__icon -->
-            <div class="advantages-card__text">
-              <div class="advantages-card__title">Духовный рост</div>
-              <div class="advantages-card__description">
-                Спобствуют духовному росту и активируют скрытые способности и
-                потенциал
-              </div>
-            </div>
-            <!-- /.advantages-card__text -->
-          </div>
-          <!-- /.card advantages-card -->
-
-          <div class="advantages-card wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
-            <div class="advantages-card__icon">
-              <img class="advantages-card__icon-bg" src="img/advantages/element-quick-healing.png"
-                alt="Быстрое исцеление" />
-              <img class="advantages-card__icon-active" src="img/advantages/icon-quick-healing.svg"
-                alt="Быстрое исцеление" />
-              <img class="advantages-card__icon-hover" src="img/advantages/icon-gradient-quick-healing.svg"
-                alt="Быстрое исцеление" />
-            </div>
-            <!-- /.advantages-card__icon -->
-            <div class="advantages-card__text">
-              <div class="advantages-card__title">Быстрое исцеление</div>
-              <div class="advantages-card__description">
-                Особенно позволяют самосовершенствоваться и исцелять различные
-                недуги
-              </div>
-            </div>
-            <!-- /.advantages-card__text -->
-          </div>
-          <!-- /.card advantages-card -->
-
-          <div class="advantages-card wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
-            <div class="advantages-card__icon">
-              <img class="advantages-card__icon-bg" src="img/advantages/element-inner-world.png" alt="Внутренний мир" />
-              <img class="advantages-card__icon-active" src="img/advantages/icon-inner-world.svg"
-                alt="Внутренний мир" />
-              <img class="advantages-card__icon-hover" src="img/advantages/icon-gradient-inner-world.svg"
-                alt="Внутренний мир" />
-            </div>
-            <!-- /.advantages-card__icon -->
-            <div class="advantages-card__text">
-              <div class="advantages-card__title">Внутренний мир</div>
-              <div class="advantages-card__description">
-                Тщательное построение личного мира и управление собственной
-                реальностью
-              </div>
-            </div>
-            <!-- /.advantages-card__text -->
-          </div>
-          <!-- /.card advantages-card -->
-
-          <div class="advantages-card wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
-            <div class="advantages-card__icon">
-              <img class="advantages-card__icon-bg" src="img/advantages/element-pure-harmony.png"
-                alt="Чистая гармония" />
-              <img class="advantages-card__icon-active" src="img/advantages/icon-pure-harmony.svg"
-                alt="Чистая гармония" />
-              <img class="advantages-card__icon-hover" src="img/advantages/icon-gradient-pure-harmony.svg"
-                alt="Чистая гармония" />
-            </div>
-            <!-- /.advantages-card__icon -->
-            <div class="advantages-card__text">
-              <div class="advantages-card__title">Чистая гармония</div>
-              <div class="advantages-card__description">
-                Необыкновенная и чистая гармония между внутренним и внешним
-                мирами
-              </div>
-            </div>
-            <!-- /.advantages-card__text -->
-          </div>
-          <!-- /.card advantages-card -->
-        </div>
-        <!-- /.advantages-cards -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.section advantages -->
-
-    <section class="section catalog" id="catalog">
-      <div class="container">
-        <h2 class="section-title catalog-title features-title wow animate__animated animate__fadeInUp"
-          data-wow-delay="0.1s">
-          Каталог <span>украшений</span>
-        </h2>
-        <!-- /.section-title catalog-title -->
-
-        <div class="catalog-cards">
-          <!-- 1-й товар -->
-          <div class="flip-container features-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
-            <div class="flipper">
-              <div class="front">
-                <div class="catalog-card__front">
-                  <div class="catalog-card__cashback-front">
-                    + кешбэк 25%!
+              <!-- /.hero-text__description -->
+              <ul class="hero-list">
+                <li
+                  class="hero-list__item animated wow animate__animated animate__fadeInLeft"
+                  data-wow-delay="0.3s"
+                >
+                  <div class="hero-list__image">
+                    <img src="img/hero/icon-password.svg" alt="Защита" />
                   </div>
-                  <div class="catalog-card__image-front">
-                    <img class="catalog-card__img-front" src="img/catalog/gold-ring-with-ruby-corundum.jpg"
-                      alt="Золотое кольцо с рубином Корунд" />
+                  <span class="hero-list__text"
+                    >Защита от негативной и деструктивной энергии</span
+                  >
+                </li>
+                <li
+                  class="hero-list__item animated wow animate__animated animate__fadeInLeft"
+                  data-wow-delay="0.4s"
+                >
+                  <div class="hero-list__image">
+                    <img src="img/hero/icon-awakening.svg" alt="Пробуждение" />
                   </div>
-                  <div class="catalog-card__text">
-                    <h3 class="catalog-card__name">
-                      Золотое кольцо с рубином Корунд
-                    </h3>
-                    <div class="catalog-card__specifications">
-                      Красное золото 585 пробы <br />
-                      Корунд 3.10 карат <br />
-                      Вес кольца около 4.30 г
+                  <span class="hero-list__text"
+                    >Пробуждение скрытого потенциала и ресурсов</span
+                  >
+                </li>
+                <li
+                  class="hero-list__item animated wow animate__animated animate__fadeInLeft"
+                  data-wow-delay="0.5s"
+                >
+                  <div class="hero-list__image">
+                    <img src="img/hero/icon-harmony.svg" alt="Гармония" />
+                  </div>
+                  <span class="hero-list__text"
+                    >Гармония внутреннего и внешнего миров</span
+                  >
+                </li>
+                <li
+                  class="hero-list__item animated wow animate__animated animate__fadeInLeft"
+                  data-wow-delay="0.6s"
+                >
+                  <div class="hero-list__image">
+                    <img src="img/hero/icon-assistants.svg" alt="Помощники" />
+                  </div>
+                  <span class="hero-list__text"
+                    >Помощники на пути к цели, мечте и реализации</span
+                  >
+                </li>
+              </ul>
+              <button
+                class="button hero-text__button wow animate__animated animate__fadeInLeft"
+                data-wow-delay="0.7s"
+                data-fancybox
+                data-type="ajax"
+                data-src="callback.html"
+                href="javascript:;"
+              >
+                Узнать подробнее
+              </button>
+              <!-- /.button -->
+            </div>
+            <!-- /.hero-text -->
+            <div class="hero-image">
+              <div
+                id="scene"
+                class="animated wow animate__animated animate__fadeInRight"
+                data-wow-delay="0.5s"
+                data-relative-input="true"
+              >
+                <img
+                  src="img/hero/element-gradient.svg"
+                  data-depth="0.9"
+                  class="img-1"
+                />
+                <img
+                  src="img/hero/element-black.svg"
+                  data-depth="0.7"
+                  class="img-2"
+                />
+                <img
+                  src="img/hero/element-pink.png"
+                  data-depth="0.5"
+                  class="img-3"
+                />
+                <img
+                  src="img/hero/element-white.png"
+                  data-depth="0.3"
+                  class="img-4"
+                />
+                <img src="img/hero/girl.png" data-depth="0.1" class="img-5" />
+              </div>
+            </div>
+            <!-- /.hero-image -->
+          </div>
+          <!-- /.hero-block -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.hero -->
+
+      <section class="section features">
+        <div class="container">
+          <div class="features-violet"></div>
+          <div class="features-ring"></div>
+          <h2
+            class="section-title features-title wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            Особенности <span>украшений</span>
+          </h2>
+          <!-- /.section-title features-title -->
+          <div class="features-item">
+            <div class="features-name">
+              <div
+                class="features-name__power wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.1s"
+              >
+                Влияние
+              </div>
+            </div>
+            <div
+              class="features-description wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.2s"
+            >
+              Энергетика вещей влияет на окружающее пространство, в том числе и
+              на человека. Ювелирные украшения в этом плане максимально
+              воздействуют на своего обладателя, особенно изделия, специально
+              созданные для коррекции энергии. Такие украшения используются
+              людьми уже на протяжении сотен лет.
+            </div>
+          </div>
+          <!-- /.features-item -->
+          <div class="features-item">
+            <div class="features-name">
+              <div
+                class="features-name__harmony wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.1s"
+              >
+                Гармония
+              </div>
+            </div>
+            <div
+              class="features-description wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.2s"
+            >
+              Если Вы постоянно ощущаете эмоциональную истощённость, видите
+              трудности в решении жизненных ситуаций, хотите быть в гармонии со
+              своими внутренним и внешним мирами, найти своё духовное «я», тогда
+              особенные украшения для энергокоррекции - это то, что Вам нужно!
+            </div>
+          </div>
+          <!-- /.features-item -->
+          <div class="features-item">
+            <div class="features-name">
+              <div
+                class="features-name__management wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.1s"
+              >
+                Управление
+              </div>
+            </div>
+            <div
+              class="features-description wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.2s"
+            >
+              Настройте вибрации своей энергии так, как Вы хотите, откройте
+              доступ к древнему знанию и законам, по которым устроена наша
+              реальность, и начните управлять судьбой по Вашим правилам. Прямо
+              сейчас!
+            </div>
+          </div>
+          <!-- /.features-item -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section features -->
+
+      <section class="section advantages">
+        <div class="container">
+          <h2
+            class="section-title advantages-title wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            Преимущества <span>украшений</span>
+          </h2>
+          <!-- /.section-title advantages-title -->
+          <div
+            class="advantages-subtitle wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            Особенные украшения - ювелирные артефакты, которые служат мощнейшими
+            накопителями энергии и имеют своё практическое применение.
+          </div>
+          <!-- /.advantages-subtitle -->
+          <div class="advantages-cards">
+            <div
+              class="advantages-card wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div class="advantages-card__icon">
+                <img
+                  class="advantages-card__icon-bg"
+                  src="img/advantages/element-active-development.png"
+                  alt="Активное развитие"
+                />
+                <img
+                  class="advantages-card__icon-active"
+                  src="img/advantages/icon-active-development.svg"
+                  alt="Активное развитие"
+                />
+                <img
+                  class="advantages-card__icon-hover"
+                  src="img/advantages/icon-gradient-active-development.svg"
+                  alt="Активное развитие"
+                />
+              </div>
+              <!-- /.advantages-card__icon -->
+              <div class="advantages-card__text">
+                <div class="advantages-card__title">Активное развитие</div>
+                <div class="advantages-card__description">
+                  Помогают активно развиваться и оставаться на высоком уровне
+                  осознанности
+                </div>
+              </div>
+              <!-- /.advantages-card__text -->
+            </div>
+            <!-- /.card advantages-card -->
+
+            <div
+              class="advantages-card wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.2s"
+            >
+              <div class="advantages-card__icon">
+                <img
+                  class="advantages-card__icon-bg"
+                  src="img/advantages/element-direct-communication.png"
+                  alt="Прямая коммуникация"
+                />
+                <img
+                  class="advantages-card__icon-active"
+                  src="img/advantages/icon-direct-communication.svg"
+                  alt="Прямая коммуникация"
+                />
+                <img
+                  class="advantages-card__icon-hover"
+                  src="img/advantages/icon-gradient-direct-communication.svg"
+                  alt="Прямая коммуникация"
+                />
+              </div>
+              <!-- /.advantages-card__icon -->
+              <div class="advantages-card__text">
+                <div class="advantages-card__title">Прямая коммуникация</div>
+                <div class="advantages-card__description">
+                  Важный инструмент соединения и прямой коммуникации со
+                  вселенной
+                </div>
+              </div>
+              <!-- /.advantages-card__text -->
+            </div>
+            <!-- /.card advantages-card -->
+
+            <div
+              class="advantages-card wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.3s"
+            >
+              <div class="advantages-card__icon">
+                <img
+                  class="advantages-card__icon-bg"
+                  src="img/advantages/element-spiritual-growth.png"
+                  alt="Духовный рост"
+                />
+                <img
+                  class="advantages-card__icon-active"
+                  src="img/advantages/icon-spiritual-growth.svg"
+                  alt="Духовный рост"
+                />
+                <img
+                  class="advantages-card__icon-hover"
+                  src="img/advantages/icon-gradient-spiritual-growth.svg"
+                  alt="Духовный рост"
+                />
+              </div>
+              <!-- /.advantages-card__icon -->
+              <div class="advantages-card__text">
+                <div class="advantages-card__title">Духовный рост</div>
+                <div class="advantages-card__description">
+                  Спобствуют духовному росту и активируют скрытые способности и
+                  потенциал
+                </div>
+              </div>
+              <!-- /.advantages-card__text -->
+            </div>
+            <!-- /.card advantages-card -->
+
+            <div
+              class="advantages-card wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.4s"
+            >
+              <div class="advantages-card__icon">
+                <img
+                  class="advantages-card__icon-bg"
+                  src="img/advantages/element-quick-healing.png"
+                  alt="Быстрое исцеление"
+                />
+                <img
+                  class="advantages-card__icon-active"
+                  src="img/advantages/icon-quick-healing.svg"
+                  alt="Быстрое исцеление"
+                />
+                <img
+                  class="advantages-card__icon-hover"
+                  src="img/advantages/icon-gradient-quick-healing.svg"
+                  alt="Быстрое исцеление"
+                />
+              </div>
+              <!-- /.advantages-card__icon -->
+              <div class="advantages-card__text">
+                <div class="advantages-card__title">Быстрое исцеление</div>
+                <div class="advantages-card__description">
+                  Особенно позволяют самосовершенствоваться и исцелять различные
+                  недуги
+                </div>
+              </div>
+              <!-- /.advantages-card__text -->
+            </div>
+            <!-- /.card advantages-card -->
+
+            <div
+              class="advantages-card wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.5s"
+            >
+              <div class="advantages-card__icon">
+                <img
+                  class="advantages-card__icon-bg"
+                  src="img/advantages/element-inner-world.png"
+                  alt="Внутренний мир"
+                />
+                <img
+                  class="advantages-card__icon-active"
+                  src="img/advantages/icon-inner-world.svg"
+                  alt="Внутренний мир"
+                />
+                <img
+                  class="advantages-card__icon-hover"
+                  src="img/advantages/icon-gradient-inner-world.svg"
+                  alt="Внутренний мир"
+                />
+              </div>
+              <!-- /.advantages-card__icon -->
+              <div class="advantages-card__text">
+                <div class="advantages-card__title">Внутренний мир</div>
+                <div class="advantages-card__description">
+                  Тщательное построение личного мира и управление собственной
+                  реальностью
+                </div>
+              </div>
+              <!-- /.advantages-card__text -->
+            </div>
+            <!-- /.card advantages-card -->
+
+            <div
+              class="advantages-card wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.6s"
+            >
+              <div class="advantages-card__icon">
+                <img
+                  class="advantages-card__icon-bg"
+                  src="img/advantages/element-pure-harmony.png"
+                  alt="Чистая гармония"
+                />
+                <img
+                  class="advantages-card__icon-active"
+                  src="img/advantages/icon-pure-harmony.svg"
+                  alt="Чистая гармония"
+                />
+                <img
+                  class="advantages-card__icon-hover"
+                  src="img/advantages/icon-gradient-pure-harmony.svg"
+                  alt="Чистая гармония"
+                />
+              </div>
+              <!-- /.advantages-card__icon -->
+              <div class="advantages-card__text">
+                <div class="advantages-card__title">Чистая гармония</div>
+                <div class="advantages-card__description">
+                  Необыкновенная и чистая гармония между внутренним и внешним
+                  мирами
+                </div>
+              </div>
+              <!-- /.advantages-card__text -->
+            </div>
+            <!-- /.card advantages-card -->
+          </div>
+          <!-- /.advantages-cards -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section advantages -->
+
+      <section class="section catalog" id="catalog">
+        <div class="container">
+          <h2
+            class="section-title catalog-title features-title wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            Каталог <span>украшений</span>
+          </h2>
+          <!-- /.section-title catalog-title -->
+
+          <div class="catalog-cards">
+            <!-- 1-й товар -->
+            <div
+              class="flip-container features-title wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div class="flipper">
+                <div class="front">
+                  <div class="catalog-card__front">
+                    <div class="catalog-card__cashback-front">
+                      + кешбэк 25%!
                     </div>
-                    <div class="catalog-card__price">
-                      <div class="catalog-card__price-new">53 000 руб.</div>
-                      <div class="catalog-card__price-old">69 000 руб.</div>
+                    <div class="catalog-card__image-front">
+                      <img
+                        class="catalog-card__img-front"
+                        src="img/catalog/gold-ring-with-ruby-corundum.jpg"
+                        alt="Золотое кольцо с рубином Корунд"
+                      />
                     </div>
-                    <div class="catalog-card__button-block">
-                      <button class="button catalog-card__button-front first" data-fancybox data-type="ajax"
-                        data-src="buy.html" href="javascript:;">
+                    <div class="catalog-card__text">
+                      <h3 class="catalog-card__name">
+                        Золотое кольцо с рубином Корунд
+                      </h3>
+                      <div class="catalog-card__specifications">
+                        Красное золото 585 пробы <br />
+                        Корунд 3.10 карат <br />
+                        Вес кольца около 4.30 г
+                      </div>
+                      <div class="catalog-card__price">
+                        <div class="catalog-card__price-new">53 000 руб.</div>
+                        <div class="catalog-card__price-old">69 000 руб.</div>
+                      </div>
+                      <div class="catalog-card__button-block">
+                        <button
+                          class="button catalog-card__button-front first"
+                          data-fancybox
+                          data-type="ajax"
+                          data-src="buy.html"
+                          href="javascript:;"
+                        >
+                          Купить
+                        </button>
+                        <a class="catalog-card__button first">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="back">
+                  <div class="catalog-card__back">
+                    <button class="catalog-card__close" id="close">
+                      &times;
+                    </button>
+                    <div class="catalog-card__cashback-back first">
+                      + кешбэк 25%!
+                    </div>
+                    <div class="catalog-card__image-back">
+                      <img
+                        class="catalog-card__img-back"
+                        src="img/catalog/gold-ring-with-ruby-corundum.jpg"
+                        alt="Золотое кольцо с рубином Корунд"
+                      />
+                    </div>
+                    <!-- /.catalog-card__image -->
+                    <div class="catalog-card__text">
+                      <p class="catalog-card__description">
+                        Роскошное золотое кольцо с рубином Корунд уместно как в
+                        повседневной жизни, так и на торжественном событии.
+                        Тёплые солнечные переливы подчеркнут индивидуальность и
+                        поднимут харизму на новый уровень.
+                      </p>
+                      <p class="catalog-card__characteristics">
+                        Помогает избавляться от болезней <br />
+                        Дарит любовь и счастье <br />
+                        Раскрывает творческие способности <br />
+                        Заряжает энергией и придаёт силы
+                      </p>
+                      <div class="catalog-card__price">
+                        <div class="catalog-card__price-new">53 000 руб.</div>
+                        <div class="catalog-card__price-old">69 000 руб.</div>
+                      </div>
+                      <!-- /.catalog-card__price -->
+                      <button
+                        class="button catalog-card__button-back first"
+                        data-fancybox
+                        data-type="ajax"
+                        data-src="buy.html"
+                        href="javascript:;"
+                      >
                         Купить
                       </button>
-                      <a class="catalog-card__button first">Подробнее</a>
                     </div>
+                    <!-- /.catalog-text -->
                   </div>
+                  <!-- /.catalog-card__back -->
                 </div>
-              </div>
-
-              <div class="back">
-                <div class="catalog-card__back">
-                  <button class="catalog-card__close" id="close">
-                    &times;
-                  </button>
-                  <div class="catalog-card__cashback-back first">
-                    + кешбэк 25%!
-                  </div>
-                  <div class="catalog-card__image-back">
-                    <img class="catalog-card__img-back" src="img/catalog/gold-ring-with-ruby-corundum.jpg"
-                      alt="Золотое кольцо с рубином Корунд" />
-                  </div>
-                  <!-- /.catalog-card__image -->
-                  <div class="catalog-card__text">
-                    <p class="catalog-card__description">
-                      Роскошное золотое кольцо с рубином Корунд уместно как в
-                      повседневной жизни, так и на торжественном событии.
-                      Тёплые солнечные переливы подчеркнут индивидуальность и
-                      поднимут харизму на новый уровень.
-                    </p>
-                    <p class="catalog-card__characteristics">
-                      Помогает избавляться от болезней <br />
-                      Дарит любовь и счастье <br />
-                      Раскрывает творческие способности <br />
-                      Заряжает энергией и придаёт силы
-                    </p>
-                    <div class="catalog-card__price">
-                      <div class="catalog-card__price-new">53 000 руб.</div>
-                      <div class="catalog-card__price-old">69 000 руб.</div>
-                    </div>
-                    <!-- /.catalog-card__price -->
-                    <button class="button catalog-card__button-back first" data-fancybox data-type="ajax"
-                      data-src="buy.html" href="javascript:;">
-                      Купить
-                    </button>
-                  </div>
-                  <!-- /.catalog-text -->
-                </div>
-                <!-- /.catalog-card__back -->
               </div>
             </div>
-          </div>
-          <!-- /1-й товар -->
+            <!-- /1-й товар -->
 
-          <!-- 2-й товар -->
-          <div class="flip-container features-title wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
-            <div class="flipper">
-              <div class="front">
-                <div class="catalog-card__front">
-                  <div class="catalog-card__cashback-front">
-                    + кешбэк 40%!
-                  </div>
-                  <div class="catalog-card__image-front">
-                    <img class="catalog-card__img-front" src="img/catalog/agate-ruby-​​gold-ring.jpg"
-                      alt="Золотое кольцо с рубинами Агат" />
-                  </div>
-                  <div class="catalog-card__text">
-                    <h3 class="catalog-card__name">
-                      Золотое кольцо с рубинами Агат
-                    </h3>
-                    <div class="catalog-card__specifications">
-                      Красное золото 585 пробы <br />
-                      Агат (3 шт.) по 1.40 карат каждый <br />
-                      Вес кольца около 4.70 г
+            <!-- 2-й товар -->
+            <div
+              class="flip-container features-title wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.2s"
+            >
+              <div class="flipper">
+                <div class="front">
+                  <div class="catalog-card__front">
+                    <div class="catalog-card__cashback-front">
+                      + кешбэк 40%!
                     </div>
-                    <div class="catalog-card__price">
-                      <div class="catalog-card__price-new">35 000 руб.</div>
-                      <div class="catalog-card__price-old">47 000 руб.</div>
+                    <div class="catalog-card__image-front">
+                      <img
+                        class="catalog-card__img-front"
+                        src="img/catalog/agate-ruby-​​gold-ring.jpg"
+                        alt="Золотое кольцо с рубинами Агат"
+                      />
                     </div>
-                    <div class="catalog-card__button-block">
-                      <button class="button catalog-card__button-front second" data-fancybox data-type="ajax"
-                        data-src="buy.html" href="javascript:;">
+                    <div class="catalog-card__text">
+                      <h3 class="catalog-card__name">
+                        Золотое кольцо с рубинами Агат
+                      </h3>
+                      <div class="catalog-card__specifications">
+                        Красное золото 585 пробы <br />
+                        Агат (3 шт.) по 1.40 карат каждый <br />
+                        Вес кольца около 4.70 г
+                      </div>
+                      <div class="catalog-card__price">
+                        <div class="catalog-card__price-new">35 000 руб.</div>
+                        <div class="catalog-card__price-old">47 000 руб.</div>
+                      </div>
+                      <div class="catalog-card__button-block">
+                        <button
+                          class="button catalog-card__button-front second"
+                          data-fancybox
+                          data-type="ajax"
+                          data-src="buy.html"
+                          href="javascript:;"
+                        >
+                          Купить
+                        </button>
+                        <a class="catalog-card__button second">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="back">
+                  <div class="catalog-card__back">
+                    <button class="catalog-card__close" id="close">
+                      &times;
+                    </button>
+                    <div class="catalog-card__cashback-back second">
+                      + кешбэк 40%!
+                    </div>
+                    <div class="catalog-card__image-back">
+                      <img
+                        class="catalog-card__img-back"
+                        src="img/catalog/agate-ruby-​​gold-ring.jpg"
+                        alt="Золотое кольцо с рубинами Агат"
+                      />
+                    </div>
+                    <!-- /.catalog-card__image -->
+                    <div class="catalog-card__text">
+                      <p class="catalog-card__description">
+                        Роскошное золотое кольцо с рубинами Агат уместно как в
+                        повседневной жизни, так и на торжественном событии.
+                        Тёплые солнечные переливы подчеркнут индивидуальность и
+                        поднимут харизму на новый уровень.
+                      </p>
+                      <p class="catalog-card__characteristics">
+                        Помогает избавляться от болезней <br />
+                        Дарит любовь и счастье <br />
+                        Раскрывает творческие способности <br />
+                        Заряжает энергией и придаёт силы
+                      </p>
+                      <div class="catalog-card__price">
+                        <div class="catalog-card__price-new">35 000 руб.</div>
+                        <div class="catalog-card__price-old">47 000 руб.</div>
+                      </div>
+                      <!-- /.catalog-card__price -->
+                      <button
+                        class="button catalog-card__button-back second"
+                        data-fancybox
+                        data-type="ajax"
+                        data-src="buy.html"
+                        href="javascript:;"
+                      >
                         Купить
                       </button>
-                      <a class="catalog-card__button second">Подробнее</a>
                     </div>
+                    <!-- /.catalog-text -->
                   </div>
+                  <!-- /.catalog-card__back -->
                 </div>
-              </div>
-
-              <div class="back">
-                <div class="catalog-card__back">
-                  <button class="catalog-card__close" id="close">
-                    &times;
-                  </button>
-                  <div class="catalog-card__cashback-back second">
-                    + кешбэк 40%!
-                  </div>
-                  <div class="catalog-card__image-back">
-                    <img class="catalog-card__img-back" src="img/catalog/agate-ruby-​​gold-ring.jpg"
-                      alt="Золотое кольцо с рубинами Агат" />
-                  </div>
-                  <!-- /.catalog-card__image -->
-                  <div class="catalog-card__text">
-                    <p class="catalog-card__description">
-                      Роскошное золотое кольцо с рубинами Агат уместно как в
-                      повседневной жизни, так и на торжественном событии.
-                      Тёплые солнечные переливы подчеркнут индивидуальность и
-                      поднимут харизму на новый уровень.
-                    </p>
-                    <p class="catalog-card__characteristics">
-                      Помогает избавляться от болезней <br />
-                      Дарит любовь и счастье <br />
-                      Раскрывает творческие способности <br />
-                      Заряжает энергией и придаёт силы
-                    </p>
-                    <div class="catalog-card__price">
-                      <div class="catalog-card__price-new">35 000 руб.</div>
-                      <div class="catalog-card__price-old">47 000 руб.</div>
-                    </div>
-                    <!-- /.catalog-card__price -->
-                    <button class="button catalog-card__button-back second" data-fancybox data-type="ajax"
-                      data-src="buy.html" href="javascript:;">
-                      Купить
-                    </button>
-                  </div>
-                  <!-- /.catalog-text -->
-                </div>
-                <!-- /.catalog-card__back -->
               </div>
             </div>
-          </div>
-          <!-- /2-й товар -->
+            <!-- /2-й товар -->
 
-          <!-- 3-й товар -->
-          <div class="flip-container features-title wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
-            <div class="flipper">
-              <div class="front">
-                <div class="catalog-card__front">
-                  <div class="catalog-card__cashback-front">
-                    + кешбэк 15%!
-                  </div>
-                  <div class="catalog-card__image-front">
-                    <img class="catalog-card__img-front"
-                      src="img/catalog/gold-earrings-with-amber-and-cubic-zirconias.jpg"
-                      alt="Золотые серьги с Янтарём и Фианитами" />
-                  </div>
-                  <div class="catalog-card__text">
-                    <h3 class="catalog-card__name">
-                      Золотые серьги с Янтарём и Фианитами
-                    </h3>
-                    <div class="catalog-card__specifications">
-                      Красное золото 585 пробы <br />
-                      Янтарь (2 шт.) по 1.90 карат и фианитами <br />
-                      Вес серёжек около 2.40 г
+            <!-- 3-й товар -->
+            <div
+              class="flip-container features-title wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.3s"
+            >
+              <div class="flipper">
+                <div class="front">
+                  <div class="catalog-card__front">
+                    <div class="catalog-card__cashback-front">
+                      + кешбэк 15%!
                     </div>
-                    <div class="catalog-card__price">
-                      <div class="catalog-card__price-new">17 000 руб.</div>
-                      <div class="catalog-card__price-old">26 000 руб.</div>
+                    <div class="catalog-card__image-front">
+                      <img
+                        class="catalog-card__img-front"
+                        src="img/catalog/gold-earrings-with-amber-and-cubic-zirconias.jpg"
+                        alt="Золотые серьги с Янтарём и Фианитами"
+                      />
                     </div>
-                    <div class="catalog-card__button-block">
-                      <button class="button catalog-card__button-front third" data-fancybox data-type="ajax"
-                        data-src="buy.html" href="javascript:;">
+                    <div class="catalog-card__text">
+                      <h3 class="catalog-card__name">
+                        Золотые серьги с Янтарём и Фианитами
+                      </h3>
+                      <div class="catalog-card__specifications">
+                        Красное золото 585 пробы <br />
+                        Янтарь (2 шт.) по 1.90 карат и фианитами <br />
+                        Вес серёжек около 2.40 г
+                      </div>
+                      <div class="catalog-card__price">
+                        <div class="catalog-card__price-new">17 000 руб.</div>
+                        <div class="catalog-card__price-old">26 000 руб.</div>
+                      </div>
+                      <div class="catalog-card__button-block">
+                        <button
+                          class="button catalog-card__button-front third"
+                          data-fancybox
+                          data-type="ajax"
+                          data-src="buy.html"
+                          href="javascript:;"
+                        >
+                          Купить
+                        </button>
+                        <a class="catalog-card__button third">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="back">
+                  <div class="catalog-card__back">
+                    <button class="catalog-card__close" id="close">
+                      &times;
+                    </button>
+                    <div class="catalog-card__cashback-back third">
+                      + кешбэк 15%!
+                    </div>
+                    <div class="catalog-card__image-back">
+                      <img
+                        class="catalog-card__img-back"
+                        src="img/catalog/gold-earrings-with-amber-and-cubic-zirconias.jpg"
+                        alt="Золотые серьги с Янтарём и Фианитами"
+                      />
+                    </div>
+                    <!-- /.catalog-card__image -->
+                    <div class="catalog-card__text">
+                      <p class="catalog-card__description">
+                        Роскошные серьги с Янтарём в золотой оправе уместны как
+                        в повседневной жизни, так и на торжественном событии.
+                        Тёплые солнечные переливы подчеркнут индивидуальность и
+                        поднимут харизму на новый уровень.
+                      </p>
+                      <p class="catalog-card__characteristics">
+                        Помогают избавляться от болезней <br />
+                        Дарят любовь и счастье <br />
+                        Раскрывают творческие способности <br />
+                        Заряжают энергией и придают силы
+                      </p>
+                      <div class="catalog-card__price">
+                        <div class="catalog-card__price-new">17 000 руб.</div>
+                        <div class="catalog-card__price-old">26 000 руб.</div>
+                      </div>
+                      <!-- /.catalog-card__price -->
+                      <button
+                        class="button catalog-card__button-back third"
+                        data-fancybox
+                        data-type="ajax"
+                        data-src="buy.html"
+                        href="javascript:;"
+                      >
                         Купить
                       </button>
-                      <a class="catalog-card__button third">Подробнее</a>
                     </div>
+                    <!-- /.catalog-text -->
                   </div>
+                  <!-- /.catalog-card__back -->
                 </div>
-              </div>
-
-              <div class="back">
-                <div class="catalog-card__back">
-                  <button class="catalog-card__close" id="close">
-                    &times;
-                  </button>
-                  <div class="catalog-card__cashback-back third">
-                    + кешбэк 15%!
-                  </div>
-                  <div class="catalog-card__image-back">
-                    <img class="catalog-card__img-back"
-                      src="img/catalog/gold-earrings-with-amber-and-cubic-zirconias.jpg"
-                      alt="Золотые серьги с Янтарём и Фианитами" />
-                  </div>
-                  <!-- /.catalog-card__image -->
-                  <div class="catalog-card__text">
-                    <p class="catalog-card__description">
-                      Роскошные серьги с Янтарём в золотой оправе уместны как
-                      в повседневной жизни, так и на торжественном событии.
-                      Тёплые солнечные переливы подчеркнут индивидуальность и
-                      поднимут харизму на новый уровень.
-                    </p>
-                    <p class="catalog-card__characteristics">
-                      Помогают избавляться от болезней <br />
-                      Дарят любовь и счастье <br />
-                      Раскрывают творческие способности <br />
-                      Заряжают энергией и придают силы
-                    </p>
-                    <div class="catalog-card__price">
-                      <div class="catalog-card__price-new">17 000 руб.</div>
-                      <div class="catalog-card__price-old">26 000 руб.</div>
-                    </div>
-                    <!-- /.catalog-card__price -->
-                    <button class="button catalog-card__button-back third" data-fancybox data-type="ajax"
-                      data-src="buy.html" href="javascript:;">
-                      Купить
-                    </button>
-                  </div>
-                  <!-- /.catalog-text -->
-                </div>
-                <!-- /.catalog-card__back -->
               </div>
             </div>
-          </div>
-          <!-- /3-й товар -->
+            <!-- /3-й товар -->
 
-          <!-- 4-й товар -->
-          <div class="flip-container card-toggle features-title wow animate__animated animate__fadeInUp"
-            data-wow-delay="0.1s">
-            <div class="flipper">
-              <div class="front">
-                <div class="catalog-card__front">
-                  <div class="catalog-card__cashback-front">
-                    + кешбэк 25%!
-                  </div>
-                  <div class="catalog-card__image-front">
-                    <img class="catalog-card__img-front" src="img/catalog/gold-ring-with-ruby-corundum.jpg"
-                      alt="Золотое кольцо с рубином Корунд" />
-                  </div>
-                  <div class="catalog-card__text">
-                    <h3 class="catalog-card__name">
-                      Золотое кольцо с рубином Корунд
-                    </h3>
-                    <div class="catalog-card__specifications">
-                      Красное золото 585 пробы <br />
-                      Корунд 3.10 карат <br />
-                      Вес кольца около 4.30 г
+            <!-- 4-й товар -->
+            <div
+              class="flip-container card-toggle features-title wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div class="flipper">
+                <div class="front">
+                  <div class="catalog-card__front">
+                    <div class="catalog-card__cashback-front">
+                      + кешбэк 25%!
                     </div>
-                    <div class="catalog-card__price">
-                      <div class="catalog-card__price-new">53 000 руб.</div>
-                      <div class="catalog-card__price-old">69 000 руб.</div>
+                    <div class="catalog-card__image-front">
+                      <img
+                        class="catalog-card__img-front"
+                        src="img/catalog/gold-ring-with-ruby-corundum.jpg"
+                        alt="Золотое кольцо с рубином Корунд"
+                      />
                     </div>
-                    <div class="catalog-card__button-block">
-                      <button class="button catalog-card__button-front first" data-fancybox data-type="ajax"
-                        data-src="buy.html" href="javascript:;">
+                    <div class="catalog-card__text">
+                      <h3 class="catalog-card__name">
+                        Золотое кольцо с рубином Корунд
+                      </h3>
+                      <div class="catalog-card__specifications">
+                        Красное золото 585 пробы <br />
+                        Корунд 3.10 карат <br />
+                        Вес кольца около 4.30 г
+                      </div>
+                      <div class="catalog-card__price">
+                        <div class="catalog-card__price-new">53 000 руб.</div>
+                        <div class="catalog-card__price-old">69 000 руб.</div>
+                      </div>
+                      <div class="catalog-card__button-block">
+                        <button
+                          class="button catalog-card__button-front first"
+                          data-fancybox
+                          data-type="ajax"
+                          data-src="buy.html"
+                          href="javascript:;"
+                        >
+                          Купить
+                        </button>
+                        <a class="catalog-card__button first">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="back">
+                  <div class="catalog-card__back">
+                    <button class="catalog-card__close" id="close">
+                      &times;
+                    </button>
+                    <div class="catalog-card__cashback-back first">
+                      + кешбэк 25%!
+                    </div>
+                    <div class="catalog-card__image-back">
+                      <img
+                        class="catalog-card__img-back"
+                        src="img/catalog/gold-ring-with-ruby-corundum.jpg"
+                        alt="Золотое кольцо с рубином Корунд"
+                      />
+                    </div>
+                    <!-- /.catalog-card__image -->
+                    <div class="catalog-card__text">
+                      <p class="catalog-card__description">
+                        Роскошное золотое кольцо с рубином Корунд уместно как в
+                        повседневной жизни, так и на торжественном событии.
+                        Тёплые солнечные переливы подчеркнут индивидуальность и
+                        поднимут харизму на новый уровень.
+                      </p>
+                      <p class="catalog-card__characteristics">
+                        Помогает избавляться от болезней <br />
+                        Дарит любовь и счастье <br />
+                        Раскрывает творческие способности <br />
+                        Заряжает энергией и придаёт силы
+                      </p>
+                      <div class="catalog-card__price">
+                        <div class="catalog-card__price-new">53 000 руб.</div>
+                        <div class="catalog-card__price-old">69 000 руб.</div>
+                      </div>
+                      <!-- /.catalog-card__price -->
+                      <button
+                        class="button catalog-card__button-back first"
+                        data-fancybox
+                        data-type="ajax"
+                        data-src="buy.html"
+                        href="javascript:;"
+                      >
                         Купить
                       </button>
-                      <a class="catalog-card__button first">Подробнее</a>
                     </div>
+                    <!-- /.catalog-text -->
                   </div>
+                  <!-- /.catalog-card__back -->
                 </div>
-              </div>
-
-              <div class="back">
-                <div class="catalog-card__back">
-                  <button class="catalog-card__close" id="close">
-                    &times;
-                  </button>
-                  <div class="catalog-card__cashback-back first">
-                    + кешбэк 25%!
-                  </div>
-                  <div class="catalog-card__image-back">
-                    <img class="catalog-card__img-back" src="img/catalog/gold-ring-with-ruby-corundum.jpg"
-                      alt="Золотое кольцо с рубином Корунд" />
-                  </div>
-                  <!-- /.catalog-card__image -->
-                  <div class="catalog-card__text">
-                    <p class="catalog-card__description">
-                      Роскошное золотое кольцо с рубином Корунд уместно как в
-                      повседневной жизни, так и на торжественном событии.
-                      Тёплые солнечные переливы подчеркнут индивидуальность и
-                      поднимут харизму на новый уровень.
-                    </p>
-                    <p class="catalog-card__characteristics">
-                      Помогает избавляться от болезней <br />
-                      Дарит любовь и счастье <br />
-                      Раскрывает творческие способности <br />
-                      Заряжает энергией и придаёт силы
-                    </p>
-                    <div class="catalog-card__price">
-                      <div class="catalog-card__price-new">53 000 руб.</div>
-                      <div class="catalog-card__price-old">69 000 руб.</div>
-                    </div>
-                    <!-- /.catalog-card__price -->
-                    <button class="button catalog-card__button-back first" data-fancybox data-type="ajax"
-                      data-src="buy.html" href="javascript:;">
-                      Купить
-                    </button>
-                  </div>
-                  <!-- /.catalog-text -->
-                </div>
-                <!-- /.catalog-card__back -->
               </div>
             </div>
-          </div>
-          <!-- /4-й товар -->
+            <!-- /4-й товар -->
 
-          <!-- 5-й товар -->
-          <div class="flip-container card-toggle features-title wow animate__animated animate__fadeInUp"
-            data-wow-delay="0.2s">
-            <div class="flipper">
-              <div class="front">
-                <div class="catalog-card__front">
-                  <div class="catalog-card__cashback-front">
-                    + кешбэк 40%!
-                  </div>
-                  <div class="catalog-card__image-front">
-                    <img class="catalog-card__img-front" src="img/catalog/agate-ruby-​​gold-ring.jpg"
-                      alt="Золотое кольцо с рубинами Агат" />
-                  </div>
-                  <div class="catalog-card__text">
-                    <h3 class="catalog-card__name">
-                      Золотое кольцо с рубинами Агат
-                    </h3>
-                    <div class="catalog-card__specifications">
-                      Красное золото 585 пробы <br />
-                      Агат (3 шт.) по 1.40 карат каждый <br />
-                      Вес кольца около 4.70 г
+            <!-- 5-й товар -->
+            <div
+              class="flip-container card-toggle features-title wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.2s"
+            >
+              <div class="flipper">
+                <div class="front">
+                  <div class="catalog-card__front">
+                    <div class="catalog-card__cashback-front">
+                      + кешбэк 40%!
                     </div>
-                    <div class="catalog-card__price">
-                      <div class="catalog-card__price-new">35 000 руб.</div>
-                      <div class="catalog-card__price-old">47 000 руб.</div>
+                    <div class="catalog-card__image-front">
+                      <img
+                        class="catalog-card__img-front"
+                        src="img/catalog/agate-ruby-​​gold-ring.jpg"
+                        alt="Золотое кольцо с рубинами Агат"
+                      />
                     </div>
-                    <div class="catalog-card__button-block">
-                      <button class="button catalog-card__button-front second" data-fancybox data-type="ajax"
-                        data-src="buy.html" href="javascript:;">
+                    <div class="catalog-card__text">
+                      <h3 class="catalog-card__name">
+                        Золотое кольцо с рубинами Агат
+                      </h3>
+                      <div class="catalog-card__specifications">
+                        Красное золото 585 пробы <br />
+                        Агат (3 шт.) по 1.40 карат каждый <br />
+                        Вес кольца около 4.70 г
+                      </div>
+                      <div class="catalog-card__price">
+                        <div class="catalog-card__price-new">35 000 руб.</div>
+                        <div class="catalog-card__price-old">47 000 руб.</div>
+                      </div>
+                      <div class="catalog-card__button-block">
+                        <button
+                          class="button catalog-card__button-front second"
+                          data-fancybox
+                          data-type="ajax"
+                          data-src="buy.html"
+                          href="javascript:;"
+                        >
+                          Купить
+                        </button>
+                        <a class="catalog-card__button second">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="back">
+                  <div class="catalog-card__back">
+                    <button class="catalog-card__close" id="close">
+                      &times;
+                    </button>
+                    <div class="catalog-card__cashback-back second">
+                      + кешбэк 40%!
+                    </div>
+                    <div class="catalog-card__image-back">
+                      <img
+                        class="catalog-card__img-back"
+                        src="img/catalog/agate-ruby-​​gold-ring.jpg"
+                        alt="Золотое кольцо с рубинами Агат"
+                      />
+                    </div>
+                    <!-- /.catalog-card__image -->
+                    <div class="catalog-card__text">
+                      <p class="catalog-card__description">
+                        Роскошное золотое кольцо с рубинами Агат уместно как в
+                        повседневной жизни, так и на торжественном событии.
+                        Тёплые солнечные переливы подчеркнут индивидуальность и
+                        поднимут харизму на новый уровень.
+                      </p>
+                      <p class="catalog-card__characteristics">
+                        Помогает избавляться от болезней <br />
+                        Дарит любовь и счастье <br />
+                        Раскрывает творческие способности <br />
+                        Заряжает энергией и придаёт силы
+                      </p>
+                      <div class="catalog-card__price">
+                        <div class="catalog-card__price-new">35 000 руб.</div>
+                        <div class="catalog-card__price-old">47 000 руб.</div>
+                      </div>
+                      <!-- /.catalog-card__price -->
+                      <button
+                        class="button catalog-card__button-back second"
+                        data-fancybox
+                        data-type="ajax"
+                        data-src="buy.html"
+                        href="javascript:;"
+                      >
                         Купить
                       </button>
-                      <a class="catalog-card__button second">Подробнее</a>
                     </div>
+                    <!-- /.catalog-text -->
                   </div>
+                  <!-- /.catalog-card__back -->
                 </div>
-              </div>
-
-              <div class="back">
-                <div class="catalog-card__back">
-                  <button class="catalog-card__close" id="close">
-                    &times;
-                  </button>
-                  <div class="catalog-card__cashback-back second">
-                    + кешбэк 40%!
-                  </div>
-                  <div class="catalog-card__image-back">
-                    <img class="catalog-card__img-back" src="img/catalog/agate-ruby-​​gold-ring.jpg"
-                      alt="Золотое кольцо с рубинами Агат" />
-                  </div>
-                  <!-- /.catalog-card__image -->
-                  <div class="catalog-card__text">
-                    <p class="catalog-card__description">
-                      Роскошное золотое кольцо с рубинами Агат уместно как в
-                      повседневной жизни, так и на торжественном событии.
-                      Тёплые солнечные переливы подчеркнут индивидуальность и
-                      поднимут харизму на новый уровень.
-                    </p>
-                    <p class="catalog-card__characteristics">
-                      Помогает избавляться от болезней <br />
-                      Дарит любовь и счастье <br />
-                      Раскрывает творческие способности <br />
-                      Заряжает энергией и придаёт силы
-                    </p>
-                    <div class="catalog-card__price">
-                      <div class="catalog-card__price-new">35 000 руб.</div>
-                      <div class="catalog-card__price-old">47 000 руб.</div>
-                    </div>
-                    <!-- /.catalog-card__price -->
-                    <button class="button catalog-card__button-back second" data-fancybox data-type="ajax"
-                      data-src="buy.html" href="javascript:;">
-                      Купить
-                    </button>
-                  </div>
-                  <!-- /.catalog-text -->
-                </div>
-                <!-- /.catalog-card__back -->
               </div>
             </div>
-          </div>
-          <!-- /5-й товар -->
+            <!-- /5-й товар -->
 
-          <!-- 6-й товар -->
-          <div class="flip-container card-toggle features-title wow animate__animated animate__fadeInUp"
-            data-wow-delay="0.3s">
-            <div class="flipper">
-              <div class="front">
-                <div class="catalog-card__front">
-                  <div class="catalog-card__cashback-front">
-                    + кешбэк 15%!
-                  </div>
-                  <div class="catalog-card__image-front">
-                    <img class="catalog-card__img-front"
-                      src="img/catalog/gold-earrings-with-amber-and-cubic-zirconias.jpg"
-                      alt="Золотые серьги с Янтарём и Фианитами" />
-                  </div>
-                  <div class="catalog-card__text">
-                    <h3 class="catalog-card__name">
-                      Золотые серьги с Янтарём и Фианитами
-                    </h3>
-                    <div class="catalog-card__specifications">
-                      Красное золото 585 пробы <br />
-                      Янтарь (2 шт.) по 1.90 карат и фианитами <br />
-                      Вес серёжек около 2.40 г
+            <!-- 6-й товар -->
+            <div
+              class="flip-container card-toggle features-title wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.3s"
+            >
+              <div class="flipper">
+                <div class="front">
+                  <div class="catalog-card__front">
+                    <div class="catalog-card__cashback-front">
+                      + кешбэк 15%!
                     </div>
-                    <div class="catalog-card__price">
-                      <div class="catalog-card__price-new">17 000 руб.</div>
-                      <div class="catalog-card__price-old">26 000 руб.</div>
+                    <div class="catalog-card__image-front">
+                      <img
+                        class="catalog-card__img-front"
+                        src="img/catalog/gold-earrings-with-amber-and-cubic-zirconias.jpg"
+                        alt="Золотые серьги с Янтарём и Фианитами"
+                      />
                     </div>
-                    <div class="catalog-card__button-block">
-                      <button class="button catalog-card__button-front third" data-fancybox data-type="ajax"
-                        data-src="buy.html" href="javascript:;">
+                    <div class="catalog-card__text">
+                      <h3 class="catalog-card__name">
+                        Золотые серьги с Янтарём и Фианитами
+                      </h3>
+                      <div class="catalog-card__specifications">
+                        Красное золото 585 пробы <br />
+                        Янтарь (2 шт.) по 1.90 карат и фианитами <br />
+                        Вес серёжек около 2.40 г
+                      </div>
+                      <div class="catalog-card__price">
+                        <div class="catalog-card__price-new">17 000 руб.</div>
+                        <div class="catalog-card__price-old">26 000 руб.</div>
+                      </div>
+                      <div class="catalog-card__button-block">
+                        <button
+                          class="button catalog-card__button-front third"
+                          data-fancybox
+                          data-type="ajax"
+                          data-src="buy.html"
+                          href="javascript:;"
+                        >
+                          Купить
+                        </button>
+                        <a class="catalog-card__button third">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="back">
+                  <div class="catalog-card__back">
+                    <button class="catalog-card__close" id="close">
+                      &times;
+                    </button>
+                    <div class="catalog-card__cashback-back third">
+                      + кешбэк 15%!
+                    </div>
+                    <div class="catalog-card__image-back">
+                      <img
+                        class="catalog-card__img-back"
+                        src="img/catalog/gold-earrings-with-amber-and-cubic-zirconias.jpg"
+                        alt="Золотые серьги с Янтарём и Фианитами"
+                      />
+                    </div>
+                    <!-- /.catalog-card__image -->
+                    <div class="catalog-card__text">
+                      <p class="catalog-card__description">
+                        Роскошные серьги с Янтарём в золотой оправе уместны как
+                        в повседневной жизни, так и на торжественном событии.
+                        Тёплые солнечные переливы подчеркнут индивидуальность и
+                        поднимут харизму на новый уровень.
+                      </p>
+                      <p class="catalog-card__characteristics">
+                        Помогают избавляться от болезней <br />
+                        Дарят любовь и счастье <br />
+                        Раскрывают творческие способности <br />
+                        Заряжают энергией и придают силы
+                      </p>
+                      <div class="catalog-card__price">
+                        <div class="catalog-card__price-new">17 000 руб.</div>
+                        <div class="catalog-card__price-old">26 000 руб.</div>
+                      </div>
+                      <!-- /.catalog-card__price -->
+                      <button
+                        class="button catalog-card__button-back third"
+                        data-fancybox
+                        data-type="ajax"
+                        data-src="buy.html"
+                        href="javascript:;"
+                      >
                         Купить
                       </button>
-                      <a class="catalog-card__button third">Подробнее</a>
                     </div>
+                    <!-- /.catalog-text -->
                   </div>
+                  <!-- /.catalog-card__back -->
                 </div>
               </div>
+            </div>
+            <!-- /6-й товар -->
+          </div>
+          <!-- /.catalog-cards -->
+          <button
+            class="button catalog-cards__button btn-toggle-cards features-title wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.4s"
+          >
+            Посмотреть ещё
+          </button>
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section catalog -->
 
-              <div class="back">
-                <div class="catalog-card__back">
-                  <button class="catalog-card__close" id="close">
-                    &times;
-                  </button>
-                  <div class="catalog-card__cashback-back third">
-                    + кешбэк 15%!
-                  </div>
-                  <div class="catalog-card__image-back">
-                    <img class="catalog-card__img-back"
-                      src="img/catalog/gold-earrings-with-amber-and-cubic-zirconias.jpg"
-                      alt="Золотые серьги с Янтарём и Фианитами" />
-                  </div>
-                  <!-- /.catalog-card__image -->
-                  <div class="catalog-card__text">
-                    <p class="catalog-card__description">
-                      Роскошные серьги с Янтарём в золотой оправе уместны как
-                      в повседневной жизни, так и на торжественном событии.
-                      Тёплые солнечные переливы подчеркнут индивидуальность и
-                      поднимут харизму на новый уровень.
-                    </p>
-                    <p class="catalog-card__characteristics">
-                      Помогают избавляться от болезней <br />
-                      Дарят любовь и счастье <br />
-                      Раскрывают творческие способности <br />
-                      Заряжают энергией и придают силы
-                    </p>
-                    <div class="catalog-card__price">
-                      <div class="catalog-card__price-new">17 000 руб.</div>
-                      <div class="catalog-card__price-old">26 000 руб.</div>
-                    </div>
-                    <!-- /.catalog-card__price -->
-                    <button class="button catalog-card__button-back third" data-fancybox data-type="ajax"
-                      data-src="buy.html" href="javascript:;">
-                      Купить
-                    </button>
-                  </div>
-                  <!-- /.catalog-text -->
-                </div>
-                <!-- /.catalog-card__back -->
+      <section class="section about" id="about">
+        <div class="container">
+          <div class="about-gradient"></div>
+          <h2
+            class="section-title about-title features-title wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            О проекте <span>и его цели</span>
+          </h2>
+          <!-- /.section-title about-title -->
+          <div
+            class="about-subtitle features-title wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            «Особенные украшения» - новый проект на российском ювелирном рынке.
+            Мы предлагаем настоящие ювелирные артефакты, нацеленные на решение
+            широкого спектра жизненных вопросов и коррекции энергетики: от
+            избавления негативных эмоций до помощи в реализации амбиций любого
+            уровня. Наша миссия - сделать Вас и мир вокруг лучше и счастливее!
+          </div>
+          <!-- /.about-subtitle -->
+          <div class="about-block">
+            <div
+              class="about-image features-title wow animate__animated animate__fadeInLeft"
+              data-wow-delay="0.3s"
+            >
+              <img
+                src="img/about/element-gradient.svg"
+                alt="bg"
+                class="about-image__bg"
+              />
+              <img
+                src="img/about/photo-man.png"
+                alt="Основатель"
+                class="about-image__place"
+              />
+            </div>
+            <!-- /.about-image -->
+            <div class="about-text">
+              <div
+                class="about-quote features-title wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.4s"
+              >
+                Цитата
+              </div>
+              <p
+                class="about-quote__text features-title wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.5s"
+              >
+                «Особенные украшения - это произведения ювелирного искусства,
+                созданные особым образом, усиливающим мистические
+                энергоинформационные свойства металлов и драгоценных камней».
+              </p>
+              <div
+                class="about-name features-title wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.6s"
+              >
+                Андрей Левин
+              </div>
+              <div
+                class="about-place features-title wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.7s"
+              >
+                Основатель проекта
+              </div>
+              <div
+                class="about-place__additional features-title wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.8s"
+              >
+                Автор книги «Скорая помощь энергетическим центрам»<br />
+                <span>Бизнес-тренер</span>
               </div>
             </div>
+            <!-- /.about-text -->
           </div>
-          <!-- /6-й товар -->
+          <!-- /.about-block -->
         </div>
-        <!-- /.catalog-cards -->
-        <button
-          class="button catalog-cards__button btn-toggle-cards features-title wow animate__animated animate__fadeInUp"
-          data-wow-delay="0.4s">
-          Посмотреть ещё
-        </button>
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.section catalog -->
+        <!-- /.container -->
+      </section>
+      <!-- /.section about -->
 
-    <section class="section about" id="about">
-      <div class="container">
-        <div class="about-gradient"></div>
-        <h2 class="section-title about-title features-title wow animate__animated animate__fadeInUp"
-          data-wow-delay="0.1s">
-          О проекте <span>и его цели</span>
-        </h2>
-        <!-- /.section-title about-title -->
-        <div class="about-subtitle features-title wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
-          «Особенные украшения» - новый проект на российском ювелирном рынке.
-          Мы предлагаем настоящие ювелирные артефакты, нацеленные на решение
-          широкого спектра жизненных вопросов и коррекции энергетики: от
-          избавления негативных эмоций до помощи в реализации амбиций любого
-          уровня. Наша миссия - сделать Вас и мир вокруг лучше и счастливее!
+      <footer class="section contacts" id="contacts">
+        <div class="container">
+          <div class="contacts-gradient"></div>
+          <h2
+            class="section-title contacts-title features-title wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            Контактная <span>информация</span>
+          </h2>
+          <!-- /.section-title contacts-title -->
+          <div
+            class="contacts-map features-title wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.2s"
+            id="map"
+          ></div>
+          <div
+            class="contacts-free features-title wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.3s"
+          >
+            Бесплатная консультация!
+          </div>
+          <div class="contacts-block">
+            <div class="contacts-block__address">
+              <div
+                class="contacts-address features-title wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.4s"
+              >
+                115184,<br />г. Москва, Климентовский переулок, 2, станция метро
+                Новокузнецкая
+              </div>
+              <!-- /.contacts-address -->
+              <div
+                class="contacts-phone features-title wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.5s"
+              >
+                <img
+                  src="img/contacts/icon-phone.svg"
+                  alt="Телефон"
+                  class="contacts-phone__img"
+                />
+                <a href="tel:8 (800) 500-97-82" class="contacts-phone__tel"
+                  >8 (800) 500-97-82</a
+                >
+              </div>
+              <!-- /.contacts-phone -->
+              <a
+                href="mailto:hello@mygoldenweb.com"
+                class="contacts-email features-title wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.6s"
+                >hello@mygoldenweb.com</a
+              >
+            </div>
+            <!-- /.contacts-block__address -->
+            <div
+              class="contacts-block__requisites features-title wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.7s"
+            >
+              ОГРН 1197746751542 / ИНН 9705140275 / КПП 770501001
+            </div>
+            <div
+              class="contacts-block__requisites-mob features-title wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.7s"
+            >
+              ОГРН 1197746751542 <br />
+              ИНН 9705140275 <br />
+              КПП 770501001
+            </div>
+            <!-- /.contacts-block__requisites -->
+            <div class="contacts-block__logos">
+              <div
+                class="contacts-logo features-title wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.8s"
+              >
+                <img
+                  class="contacts-logo__img"
+                  src="img/contacts/logo.svg"
+                  alt="Логотип"
+                />
+              </div>
+              <!-- /.contacts-logo -->
+              <div
+                class="contacts-social features-title wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.9s"
+              >
+                <a
+                  class="contacts-social__insta"
+                  href="https://www.instagram.com/auracor.ru/"
+                  target="_blank"
+                ></a>
+                <a
+                  class="contacts-social__fb"
+                  href="https://www.facebook.com/Goldwebbusiness"
+                  target="_blank"
+                ></a>
+                <a
+                  class="contacts-social__yt"
+                  href="https://www.youtube.com/channel/UCt-IxK_-95C1RlcHonRVvCA/"
+                  target="_blank"
+                ></a>
+                <a
+                  class="contacts-social__wa"
+                  href="https://wa.me/79654142533"
+                  target="_blank"
+                ></a>
+                <a
+                  class="contacts-social__telega"
+                  href="tg://resolve?domain=Gold_web_bot"
+                  target="_blank"
+                ></a>
+              </div>
+              <!-- /.contacts-social -->
+            </div>
+            <!-- /.contacts-block__logos -->
+            <a href="#" class="scrollup"></a>
+          </div>
+          <!-- /.contacts-block -->
         </div>
-        <!-- /.about-subtitle -->
-        <div class="about-block">
-          <div class="about-image features-title wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">
-            <img src="img/about/element-gradient.svg" alt="bg" class="about-image__bg" />
-            <img src="img/about/photo-man.png" alt="Основатель" class="about-image__place" />
-          </div>
-          <!-- /.about-image -->
-          <div class="about-text">
-            <div class="about-quote features-title wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
-              Цитата
-            </div>
-            <p class="about-quote__text features-title wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
-              «Особенные украшения - это произведения ювелирного искусства,
-              созданные особым образом, усиливающим мистические
-              энергоинформационные свойства металлов и драгоценных камней».
-            </p>
-            <div class="about-name features-title wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
-              Андрей Левин
-            </div>
-            <div class="about-place features-title wow animate__animated animate__fadeInUp" data-wow-delay="0.7s">
-              Основатель проекта
-            </div>
-            <div class="about-place__additional features-title wow animate__animated animate__fadeInUp"
-              data-wow-delay="0.8s">
-              Автор книги «Скорая помощь энергетическим центрам»<br />
-              <span>Бизнес-тренер</span>
-            </div>
-          </div>
-          <!-- /.about-text -->
-        </div>
-        <!-- /.about-block -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.section about -->
+        <!-- /.container -->
+      </footer>
+      <!-- /.footer contacts -->
+    </main>
 
-    <footer class="section contacts" id="contacts">
-      <div class="container">
-        <div class="contacts-gradient"></div>
-        <h2 class="section-title contacts-title features-title wow animate__animated animate__fadeInUp"
-          data-wow-delay="0.1s">
-          Контактная <span>информация</span>
-        </h2>
-        <!-- /.section-title contacts-title -->
-        <div class="contacts-map features-title wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" id="map">
-        </div>
-        <div class="contacts-free features-title wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
-          Бесплатная консультация!
-        </div>
-        <div class="contacts-block">
-          <div class="contacts-block__address">
-            <div class="contacts-address features-title wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
-              115184,<br />г. Москва, Климентовский переулок, 2, станция метро
-              Новокузнецкая
-            </div>
-            <!-- /.contacts-address -->
-            <div class="contacts-phone features-title wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
-              <img src="img/contacts/icon-phone.svg" alt="Телефон" class="contacts-phone__img" />
-              <a href="tel:8 (800) 500-97-82" class="contacts-phone__tel">8 (800) 500-97-82</a>
-            </div>
-            <!-- /.contacts-phone -->
-            <a href="mailto:hello@mygoldenweb.com"
-              class="contacts-email features-title wow animate__animated animate__fadeInUp"
-              data-wow-delay="0.6s">hello@mygoldenweb.com</a>
-          </div>
-          <!-- /.contacts-block__address -->
-          <div class="contacts-block__requisites features-title wow animate__animated animate__fadeInUp"
-            data-wow-delay="0.7s">
-            ОГРН 1197746751542 / ИНН 9705140275 / КПП 770501001
-          </div>
-          <div class="contacts-block__requisites-mob features-title wow animate__animated animate__fadeInUp"
-            data-wow-delay="0.7s">
-            ОГРН 1197746751542 <br />
-            ИНН 9705140275 <br />
-            КПП 770501001
-          </div>
-          <!-- /.contacts-block__requisites -->
-          <div class="contacts-block__logos">
-            <div class="contacts-logo features-title wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
-              <img class="contacts-logo__img" src="img/contacts/logo.svg" alt="Логотип" />
-            </div>
-            <!-- /.contacts-logo -->
-            <div class="contacts-social features-title wow animate__animated animate__fadeInUp" data-wow-delay="0.9s">
-              <a class="contacts-social__insta" href="https://www.instagram.com/auracor.ru/" target="_blank"></a>
-              <a class="contacts-social__fb" href="https://www.facebook.com/Goldwebbusiness" target="_blank"></a>
-              <a class="contacts-social__yt" href="https://www.youtube.com/channel/UCt-IxK_-95C1RlcHonRVvCA/"
-                target="_blank"></a>
-              <a class="contacts-social__wa" href="https://wa.me/79654142533" target="_blank"></a>
-              <a class="contacts-social__telega" href="tg://resolve?domain=Gold_web_bot" target="_blank"></a>
-            </div>
-            <!-- /.contacts-social -->
-          </div>
-          <!-- /.contacts-block__logos -->
-          <a href="#" class="scrollup"></a>
-        </div>
-        <!-- /.contacts-block -->
-      </div>
-      <!-- /.container -->
-    </footer>
-    <!-- /.footer contacts -->
-  </main>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Анимация -->
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 
-  <!-- Анимация -->
-  <script src="js/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
+    <!-- Параллакс-эффект изображений на 1-м экране -->
+    <script src="js/parallax.min.js"></script>
+    <script>
+      var scene = document.getElementById("scene");
+      var parallaxInstance = new Parallax(scene);
+    </script>
 
-  <!-- Параллакс-эффект изображений на 1-м экране -->
-  <script src="js/parallax.min.js"></script>
-  <script>
-    var scene = document.getElementById("scene");
-    var parallaxInstance = new Parallax(scene);
-  </script>
+    <script src="js/main.js"></script>
 
-  <script src="js/main.js"></script>
-
-  <!-- Слайдер Swiper -->
-  <link rel="stylesheet" href="css/swiper.min.css" />
-  <script src="js/swiper.min.js"></script>
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".swiper-container", {
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script>
-
-  <!-- Fancybox CSS -->
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
-  <!-- Fancybox JS -->
-  <script src="js/jquery.fancybox.min.js"></script>
-
-  <!-- Валидация форм + маска для телефона -->
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/jquery.maskedinput.min.js"></script>
-
-  <script>
-    // Валидация формы
-    $(document).ready(function () {
-      $("#contacts-form").validate({
-        rules: {
-          name: {
-            required: true,
-            minlength: 2,
-            maxlength: 15,
-          },
-          phone: {
-            required: true,
-          },
-          email: {
-            required: true,
-          },
-        },
-        messages: {
-          name: {
-            required: "Укажите Ваше имя",
-            minlength: jQuery.validator.format("Осталось символов: {0}"),
-            maxlength: jQuery.validator.format("Не больше 15 символов"),
-          },
-          phone: {
-            required: "Укажите Ваш телефон",
-          },
-          email: {
-            required: "Укажите Ваш email",
-          },
+    <!-- Слайдер Swiper -->
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <script src="js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
         },
       });
-      // Маска для телефона
-      $(".phone").mask("+7 (999) 999-99-99");
-    });
-  </script>
+    </script>
 
-  <!-- Своя метка на Яндекс карте -->
-  <script type="text/javascript"
-    src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=d9a5b870-9f3c-4b84-ba97-7276ba4c98ca"></script>
-  <script>
-    ymaps.ready(function () {
-      var myMap = new ymaps.Map(
-          "map", {
-            center: [55.741202, 37.631827],
-            zoom: 16,
-          }, {
-            searchControlProvider: "yandex#search",
-          }
-        ),
-        // Создаём макет содержимого.
-        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-        ),
-        myPlacemarkWithContent = new ymaps.Placemark(
-          [55.741202, 37.631827], {
-            hintContent: 'Ювелирная компания "Aura"',
-            balloonContent: "115184, г. Москва, Климентовский переулок, 2, станция метро Новокузнецкая",
-            iconContent: "",
-          }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: "default#imageWithContent",
-            // Своё изображение иконки метки.
-            iconImageHref: "img/contacts/map-icon.svg",
-            // Размеры метки.
-            iconImageSize: [56, 56],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-28, -28],
-            // Смещение слоя с содержимым относительно слоя с картинкой.
-            iconContentOffset: [15, 15],
-            // Макет содержимого.
-            iconContentLayout: MyIconContentLayout,
-          }
-        );
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <!-- Fancybox JS -->
+    <script src="js/jquery.fancybox.min.js"></script>
 
-      // Отключение изменение масштаба карты колесом мыши на десктопах
-      myMap.behaviors.disable("scrollZoom");
-      // Отключение мультитач жестов
-      myMap.behaviors.disable("multiTouch");
-      // Отключаем перетаскивание карты
-      // myMap.behaviors.disable("drag");
+    <!-- Валидация форм + маска для телефона -->
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
 
-      myMap.geoObjects.add(myPlacemarkWithContent);
-    });
-  </script>
-</body>
+    <script>
+      // Валидация формы
+      $(document).ready(function () {
+        $("#contacts-form").validate({
+          rules: {
+            name: {
+              required: true,
+              minlength: 2,
+              maxlength: 15,
+            },
+            phone: {
+              required: true,
+            },
+            email: {
+              required: true,
+            },
+          },
+          messages: {
+            name: {
+              required: "Укажите Ваше имя",
+              minlength: jQuery.validator.format("Осталось символов: {0}"),
+              maxlength: jQuery.validator.format("Не больше 15 символов"),
+            },
+            phone: {
+              required: "Укажите Ваш телефон",
+            },
+            email: {
+              required: "Укажите Ваш email",
+            },
+          },
+        });
+        // Маска для телефона
+        $(".phone").mask("+7 (999) 999-99-99");
+      });
+    </script>
 
+    <!-- Своя метка на Яндекс карте -->
+    <script
+      type="text/javascript"
+      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=d9a5b870-9f3c-4b84-ba97-7276ba4c98ca"
+    ></script>
+    <script>
+      ymaps.ready(function () {
+        var myMap = new ymaps.Map(
+            "map",
+            {
+              center: [55.741202, 37.631827],
+              zoom: 16,
+            },
+            {
+              searchControlProvider: "yandex#search",
+            }
+          ),
+          // Создаём макет содержимого.
+          MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+          ),
+          myPlacemarkWithContent = new ymaps.Placemark(
+            [55.741202, 37.631827],
+            {
+              hintContent: 'Ювелирная компания "Aura"',
+              balloonContent:
+                "115184, г. Москва, Климентовский переулок, 2, станция метро Новокузнецкая",
+              iconContent: "",
+            },
+            {
+              // Опции.
+              // Необходимо указать данный тип макета.
+              iconLayout: "default#imageWithContent",
+              // Своё изображение иконки метки.
+              iconImageHref: "img/contacts/map-icon.svg",
+              // Размеры метки.
+              iconImageSize: [56, 56],
+              // Смещение левого верхнего угла иконки относительно
+              // её "ножки" (точки привязки).
+              iconImageOffset: [-28, -28],
+              // Смещение слоя с содержимым относительно слоя с картинкой.
+              iconContentOffset: [15, 15],
+              // Макет содержимого.
+              iconContentLayout: MyIconContentLayout,
+            }
+          );
+
+        // Отключение изменение масштаба карты колесом мыши на десктопах
+        myMap.behaviors.disable("scrollZoom");
+        // Отключение мультитач жестов
+        myMap.behaviors.disable("multiTouch");
+        // Отключаем перетаскивание карты
+        // myMap.behaviors.disable("drag");
+
+        myMap.geoObjects.add(myPlacemarkWithContent);
+      });
+    </script>
+  </body>
 </html>

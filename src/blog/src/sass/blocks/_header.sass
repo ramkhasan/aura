@@ -1,5 +1,13 @@
 .header
   padding-top: 18px
+  &-gradient
+    position: absolute
+    top: -309px
+    left: 1040px
+    background: url(../img/header/element-gradient.png) no-repeat
+    width: 713px
+    height: 653px
+    z-index: -2
   &-block 
     display: flex
     justify-content: space-between
@@ -19,7 +27,7 @@
     display: flex
     flex-direction: row
     align-items: center
-    margin-left: 100px
+    margin-left: 255px
     margin-bottom: 26px
     &__phone 
       display: flex
@@ -27,9 +35,9 @@
     &__tel 
       margin-left: 15px
       font-size: 18px
-      color: $white-color
+      color: $text-color
       text-decoration: none
-      background-image: linear-gradient($white-color, $white-color)
+      background-image: linear-gradient($text-color, $text-color)
       background-position: 0% 100%
       background-repeat: no-repeat
       background-size: 0% 1px
@@ -39,31 +47,25 @@
         background-size: 100% 1px
   &-links 
     margin-bottom: 26px
-    &__login 
-      padding: 9px 37px
-      font-size: 12px
-      text-decoration: none
-      background-color: inherit
-      box-shadow: none
-      border: 2px solid $main-color
-      color: $white-color
-      transition: all .3s
-      &:hover 
-        background-color: $main-color
-        box-shadow: 0 10px 30px rgba($main-color, 0.7)
-        color: rgba($white-color, 0.7)
-        transition: all .3s
-    &__reg
-      padding: 9px 53px
-      background-color: $main-color
-      box-shadow: 0px 10px 20px 0px rgba($main-color, 0.3)
-      font-size: 14px
-      +light 
-      &:hover 
-        background-color: lighten($main-color, 5%)
-        box-shadow: 0 10px 30px rgba($main-color, 0.7)
+  &-icon 
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 34px
+    height: 34px
+    border-radius: 50%
+    color: $text-color
+    background-color: $login-color
+    box-shadow: 0px 10px 20px 0px rgba($text-color, 0.2)
+    cursor: pointer
+    transition: ease 0.3s
+    &:hover
+      transform: scale(1.03)
+      box-shadow: 0 10px 30px rgba($text-color, 0.3)
+      opacity: .8
       &:active
-        background-color: lighten($main-color, 10%)
+        transform: scale(.98)
+        opacity: .6
   &-mob 
     display: none 
 
@@ -73,7 +75,7 @@ body.no-scroll
 // Навигация
 .nav 
   width: 366px
-  margin-bottom: 26px
+  margin-bottom: 37px
   margin-left: 95px
   font-size: 12px
   z-index: 105
@@ -90,16 +92,17 @@ body.no-scroll
   &__item 
     list-style-type: none 
   &__link 
-    color: $white-color
     text-decoration: none
     transition: all 0.6s
-  &__link:hover 
-    color: $main-color
+    color: $text-color
+    +med
+    &:hover 
+      color: $main-color
   // иконка навигации
   &__trigger 
     display: none
   &__button 
-    display: none 
+    display: none
 
 @media screen and ( max-width: 1200px )
   .header 
@@ -111,8 +114,6 @@ body.no-scroll
       &__img-mob 
         display: block
         width: 70px
-    // &-menu 
-    //   margin-left: 0
     &-contacts
       display: none
     &-links 
@@ -132,7 +133,7 @@ body.no-scroll
         justify-content: flex-end
       &__text 
         font-size: 12px
-        color: $white-color
+        color: $text-color
         padding-right: 16px
       &__icon
         display: flex
@@ -142,22 +143,22 @@ body.no-scroll
         height: 34px
         border-radius: 50%
         color: $white-color
-        background-color: $main-color
-        box-shadow: 0px 10px 20px 0px rgba($main-color, 0.3)
+        background-color: $login-color
+        box-shadow: 0px 10px 20px 0px rgba($text-color, 0.2)
         cursor: pointer
         transition: ease 0.3s
         &:hover
           transform: scale(1.03)
-          box-shadow: 0 10px 30px rgba($main-color, 0.7)
+          box-shadow: 0 10px 30px rgba($text-color, 0.3)
           opacity: .8
           &:active
             transform: scale(.98)
             opacity: .6
       &__icon-phone
-        background-color: $white-color
-        box-shadow: 0px 10px 20px 0px rgba($white-color, 0.3)
+        background-color: $main-color
+        box-shadow: 0px 10px 20px 0px rgba($main-color, 0.3)
         &:hover
-          box-shadow: 0 10px 30px rgba($white-color, 0.7)
+          box-shadow: 0 10px 30px rgba($main-color, 0.7)
   .nav 
     margin-left: 0
 @media screen and ( max-width: 768px )
@@ -202,13 +203,13 @@ body.no-scroll
       height: 34px
       border-radius: 50%
       color: $white-color
-      background-color: $main-color
-      box-shadow: 0px 10px 20px 0px rgba($main-color, 0.3)
+      background-color: $login-color
+      box-shadow: 0px 10px 20px 0px rgba($text-color, 0.2)
       transition: ease 0.3s
       z-index: 110
       &:hover
         transform: scale(1.03)
-        box-shadow: 0 10px 30px rgba($main-color, 0.7)
+        box-shadow: 0 10px 30px rgba($text-color, 0.3)
         &:active
           transform: scale(.98)
       &--active 
@@ -232,6 +233,7 @@ body.no-scroll
       flex-direction: column
       align-items: flex-start 
     &__link 
+      color: $white-color
       opacity: 0  
       font-size: 18px
       +light
@@ -244,7 +246,7 @@ body.no-scroll
       border-radius: 2px
       position: absolute
       top: 14px
-      background-color: $white-color
+      background-color: $text-color
       transition-property: background-color, transform
       transition-duration: 0.5s 
     &__icon:before, &__icon:after
@@ -254,7 +256,7 @@ body.no-scroll
       height: 2px
       border-radius: 2px
       position: absolute
-      background: $white-color
+      background: $text-color
       transition-property: margin, transform
       transition-duration: 0.5s 
     &__icon span
@@ -264,7 +266,7 @@ body.no-scroll
       height: 2px
       border-radius: 2px
       position: absolute
-      background: $white-color
+      background: $text-color
       transition-property: margin, transform
       transition-duration: 0.5s 
     &__icon:before 
@@ -275,7 +277,7 @@ body.no-scroll
       margin-top: 10px
     &--active &__link 
       opacity: 1 
-    &--active & 
+    &--active .nav 
       transition: all 300ms ease-in-out
       transform: translateX(0) 
     &--active &__icon, &--active &__icon span
@@ -285,10 +287,16 @@ body.no-scroll
     &--active &__icon:before 
       margin-top: 2px
       transform: rotate(45deg) 
+      background-color: $white-color
     &--active &__icon:after 
       margin-top: 2px
-      transform: rotate(-45deg)
+      transform: rotate(-45deg) 
+      background-color: $white-color
 @media screen and ( max-width: 425px )
+  .header 
+    &-gradient 
+      top: -545px
+      left: -211px
   .nav__list 
     padding: 10px
     padding-top: 114px

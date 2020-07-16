@@ -384,6 +384,10 @@ input.error {
   display: none;
 }
 
+.header-mob__user-button {
+  display: none;
+}
+
 body.no-scroll {
   overflow: hidden;
 }
@@ -577,6 +581,18 @@ body.no-scroll {
     padding-bottom: 24px;
     text-decoration: none;
   }
+  .header-mob__user-button {
+    display: block;
+    background-color: #8a57fc;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 15px 78px;
+    margin: auto;
+    margin-top: 56px;
+    font-size: 14px;
+    cursor: pointer;
+  }
   .header-mob__phone {
     margin-top: 45px;
   }
@@ -759,6 +775,12 @@ body.no-scroll {
   .nav__list {
     padding: 10px;
     padding-top: 114px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .header-mob__user-button {
+    padding: 15px 68px;
   }
 }
 
